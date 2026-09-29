@@ -28,7 +28,7 @@ Author: James Holm. Status: specification with executable rules and scoring; not
 - [agents](agents/SPEC.md), [prompts](agents/prompts/), [orchestrator](agents/orchestrator/decide.py)
 - [slack](slack/SPEC.md), [cards](slack/cards.md)
 - [plays](plays/SPEC.md)
-- [ops](ops/SPEC.md)
+- [ops](ops/SPEC.md), [operator](ops/operator.md)
 - [evals](evals/README.md)
 
 ## Vendors

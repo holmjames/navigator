@@ -24,7 +24,7 @@ Status: **spec, not code.** The only executable pieces are the orchestrator's de
 | `agents/` | The agent team: prompts, the orchestrator, evals hooks. |
 | `slack/` | The Bolt app: cards, actions, App Home, manifest. |
 | `plays/` | The five signal plays, one file each. |
-| `ops/` | Secrets, caps, kill switch, cost meter, audit log. |
+| `ops/` | Secrets, caps, kill switch, cost meter, audit log, and the operator that gates production writes (`ops/operator.md`). |
 | `integrations/` | One file per vendor: auth, endpoints used, payload shapes, limits, and what still needs verifying. |
 | `evals/` | The golden set and how it runs. |
 

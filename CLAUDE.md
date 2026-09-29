@@ -39,7 +39,8 @@ Write these as tests before the code that could violate them exists.
 
 - A second CRM. Salesforce is the system of record. Navigator writes tasks, events, and opp stage changes through the API and reads everything else nightly.
 - A model abstraction layer. The models are OpenAI's (see `docs/decisions.md`). Prompts live in `agents/prompts/` as Markdown with a frontmatter block naming the model, so a model change is a one-line PR.
-- Custom scheduling infrastructure. Batch work runs on Snowflake tasks (Cortex where the region allows it, otherwise the OpenAI Batch API filed from one n8n flow). Event flows run on n8n. Code is reserved for the Slack app, the orchestrator's decision function, and evals. `docs/decisions.md` explains.
+- Custom scheduling infrastructure. Batch work runs on Snowflake tasks (Cortex where the region allows it, otherwise the OpenAI Batch API filed from one n8n flow). Event flows run on n8n. Code is reserved for the Slack app, the orchestrator's decision function, evals, and the operator. `docs/decisions.md` explains.
+- An agent-with-tools loop in the send path. Nothing at runtime decides what to call; the orchestrator decides, the agents write words, the operator (`ops/operator.md`) is for people changing the pipeline, not for the pipeline.
 - Anything that reads a rep's inbox directly. Replies arrive from Apollo's reply webhook and from Centralize's email sync.
 
 ## Vendors from the CLI
@@ -55,7 +56,7 @@ claude mcp add --transport http moltsets  https://mcp.moltsets.com/mcp    --head
 
 Keys come from the environment only. Never write a key into a file, a fixture, a test, a log line, or a commit. If you see one in the repo, stop and say so.
 
-Snowflake: use the `snow` CLI with the `NAVIGATOR_DEV` role. Salesforce: the `sf` CLI against the sandbox. dbt: `dbt run --select <model>`. Slack: the app manifest in `slack/manifest.yml`.
+Snowflake: use the `snow` CLI with the `NAVIGATOR_DEV` role on dev, and `NAVIGATOR_RO` on prod. Production writes to `core.*` and the switches go only through the Navigator operator (`ops/operator.md`), whose `*.apply` tools stay on ask-every-time; production Salesforce and Apollo writes go through the gtm-ops-agents operators. If you find yourself typing an `update` against prod, stop. Salesforce: the `sf` CLI against the sandbox. dbt: `dbt run --select <model>`. Slack: the app manifest in `slack/manifest.yml`.
 
 ## Conventions
 

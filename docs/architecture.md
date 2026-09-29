@@ -65,6 +65,10 @@ Models are OpenAI's: GPT-5.5 for briefs, drafts, QA, and replies; GPT-5 nano for
 | **Slack bot** | Morning playbook in an App Home list; DMs for P1s and replies. One card per account: brief, score with reasons, draft with grade, next action, buttons (approve, edit, call now, snooze, disqualify). |
 | **Manager view** | Signals fired, share actioned within 24 hours, reply and meeting rate by play and tier, QA grade versus reply rate, cost per meeting. |
 
+## Operating it
+
+People and coding agents read production through read-only roles and the vendor MCPs. Every production write goes through the Navigator operator (`ops/operator.md`): preview, one-time ticket, apply with a drift check, read-back verify, audit. Nothing at runtime uses it; it is for the humans operating the pipeline.
+
 ## The loop
 
 Replies, meetings, and opps update `core.outcomes`, joined to the touch and the signal that started them. Weights are refit against what converted (quarterly at 500 reps; the pilot cannot fit weights). QA grades are checked against reply rates so the grader is graded.

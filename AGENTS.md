@@ -27,7 +27,7 @@ navigator/
 ├── agents/              prompts/, orchestrator/ (decide.py + tests), SPEC.md
 ├── slack/               cards.md, manifest.yml, SPEC.md
 ├── plays/               five signal plays, one file each, SPEC.md
-├── ops/                 secrets, caps, kill switch, cost meter, audit log, SPEC.md
+├── ops/                 secrets, caps, kill switch, cost meter, audit log, SPEC.md, operator.md
 ├── integrations/        one file per vendor: auth, endpoints, payloads, limits, to-verify
 ├── evals/               golden set, fixtures, how it runs
 └── demo/                the human-facing walkthrough page

@@ -22,6 +22,7 @@ Defaults taken where the design had a choice, with the reason, so a builder does
 | 14 | **No PII in prompts.** First name, title, persona, brief. | Privacy review, and the models don't need it. | No |
 | 15 | **Business email only; the MoltSets personal-email endpoint is never called; no SMS.** | Compliance. | No |
 | 16 | **Clay plays are built in the UI and exported as JSON for review.** "Plays as code" means reviewable, not programmatically recreated. | Clay's API pushes rows and receives webhooks; it does not build tables. | No |
+| 17 | **Connectivity for reads, an operator for writes.** Agents and people read production through read-only roles and the vendor MCPs; every production write to `core.*` or the switches goes through the Navigator operator's preview, ticket, apply, verify gate (`ops/operator.md`). Salesforce and Apollo production writes go through the operators in gtm-ops-agents. No operator sits in the runtime send path. | The pipeline already has its gates as stages; the humans operating the pipeline need a gate too, and a flow tool cannot hold one. | Yes |
 
 ## Open
 

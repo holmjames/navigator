@@ -394,6 +394,46 @@ create table if not exists core.switches (
   primary key (switch)
 );
 
+create table if not exists core.weights (
+  weights_version string not null,
+  components      variant,             -- the term definitions and thresholds, as data
+  fit_on_outcomes number,
+  created_by      string,
+  created_at      timestamp_ntz default current_timestamp(),
+  active          boolean default false,
+  activated_by    string,
+  activated_at    timestamp_ntz,
+  primary key (weights_version)
+);
+
+create table if not exists core.cursors (
+  source     string not null,          -- steadybase_whats_new | steadybase_bulk_since | swarm_weekly
+  cursor     string,
+  updated_at timestamp_ntz default current_timestamp(),
+  primary key (source)
+);
+
+create table if not exists core.geo_rules_staged   like core.geo_rules;
+create table if not exists core.play_budgets (
+  play           string not null,
+  rows_per_month number,
+  updated_by     string,
+  updated_at     timestamp_ntz default current_timestamp(),
+  primary key (play)
+);
+create table if not exists core.play_budgets_staged like core.play_budgets;
+
+create table if not exists core.operator_tickets (
+  ticket      string not null,
+  tool        string,
+  preview     variant,
+  issued_to   string,
+  issued_at   timestamp_ntz default current_timestamp(),
+  expires_at  timestamp_ntz,
+  used_at     timestamp_ntz,
+  primary key (ticket)
+);
+
 create table if not exists core.audit (
   at         timestamp_ntz default current_timestamp(),
   actor      string,

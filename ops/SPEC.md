@@ -2,6 +2,8 @@
 
 **Owns:** vendor keys and where they live; the caps and their enforcement points; the three kill switches; the cost meter; the audit log; alerts.
 
+Production changes to any of these go through the Navigator operator: `operator.md`.
+
 ## Secrets
 
 - Every vendor key lives in the secret store Navan already uses (AWS Secrets Manager or equivalent), read into environment variables at process start. Never in a file, a Clay cell, an n8n node's parameters (use n8n credentials), a fixture, a test, or a log line.
