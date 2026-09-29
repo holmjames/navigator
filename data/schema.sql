@@ -250,6 +250,8 @@ create table if not exists core.signals (
   _loaded_at     timestamp_ntz default current_timestamp(),
   primary key (signal_id)
 );
+-- Snowflake does not enforce CHECK constraints; this one documents intent. The enforcement is the loader's contract check
+-- (ingest/SPEC.md) and the dbt test data/dbt/tests/signals_https.sql.
 alter table core.signals add constraint if not exists chk_https check (source_url like 'https://%');
 
 create table if not exists core.briefs (

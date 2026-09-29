@@ -153,11 +153,29 @@ def test_germany_is_never_email_first():
     assert d.action == "linkedin"
 
 
-def test_best_contact_is_persona_rank_then_warm_path():
+def test_warm_path_and_new_in_role_beat_persona_rank():
+    # The Larkspur case from the demo: the CFO outranks the controller, but the controller has a 0.82 warm path
+    # and is 58 days into the role. Two ranks for the path, one for new-in-role: the controller wins, by warm intro.
     cfo = controller(contact_id="c_dana", persona="cfo", persona_rank=1, warm_path_strength=0.0)
-    ctrl = controller(contact_id="c_miguel", persona="controller", persona_rank=2, warm_path_strength=0.82)
+    ctrl = controller(contact_id="c_miguel", persona="controller", persona_rank=2, warm_path_strength=0.82,
+                      role_start=TODAY - timedelta(days=58))
     d = decide(larkspur(contacts=[cfo, ctrl]), TODAY)
-    assert d.contact_id == "c_dana"  # rank wins; the warm path is on the controller and still shows on the card
+    assert d.contact_id == "c_miguel" and d.action == "warm_intro"
+
+
+def test_persona_rank_wins_when_nothing_else_differs():
+    cfo = controller(contact_id="c_dana", persona="cfo", persona_rank=1)
+    ctrl = controller(contact_id="c_miguel", persona="controller", persona_rank=2)
+    d = decide(larkspur(contacts=[cfo, ctrl]), TODAY)
+    assert d.contact_id == "c_dana"
+
+
+def test_new_in_role_alone_does_not_beat_the_cfo_but_a_warm_path_does():
+    cfo = controller(contact_id="c_dana", persona="cfo", persona_rank=1)
+    new_ctrl = controller(contact_id="c_miguel", persona="controller", persona_rank=2, role_start=TODAY - timedelta(days=58))
+    assert decide(larkspur(contacts=[cfo, new_ctrl]), TODAY).contact_id == "c_dana"   # 1 vs 2-1=1: tie, rank order holds
+    warm_ctrl = controller(contact_id="c_miguel", persona="controller", persona_rank=2, warm_path_strength=0.75)
+    assert decide(larkspur(contacts=[cfo, warm_ctrl]), TODAY).contact_id == "c_miguel"
 
 
 # ---- Autonomy ----

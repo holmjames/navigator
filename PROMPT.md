@@ -8,7 +8,7 @@ You are implementing Navigator, an AI agent team that runs outbound for a 500-re
 
 Start by reading, in this order: `CLAUDE.md`, `AGENTS.md`, `docs/architecture.md`, `docs/data-flow.md`, `docs/scoring.md`, `docs/rules.md`, `docs/tiers.md`, `docs/decisions.md`. Then read the `SPEC.md` for the part you are about to build, and the `integrations/*.md` files it references.
 
-Then confirm the environment: run `uv run pytest -q` and report the result (47 tests should pass before you write anything). Run `snow sql -q "select current_region(), current_version()"` and record the region in `docs/decisions.md` open item C, because it decides whether batch model calls run inside Snowflake or through the OpenAI Batch API. Call `list_lanes` on the SteadyBase MCP server and `search_people` with `limit: 1` on MoltSets to prove both keys work; do not print the keys or the responses' contact fields.
+Then confirm the environment: run `uv run pytest -q` and report the result (49 tests should pass before you write anything). Run `snow sql -q "select current_region(), current_version()"` and record the region in `docs/decisions.md` open item C, because it decides whether batch model calls run inside Snowflake or through the OpenAI Batch API. Call `list_lanes` on the SteadyBase MCP server and `search_people` with `limit: 1` on MoltSets to prove both keys work; do not print the keys or the responses' contact fields.
 
 Build in the order in `CLAUDE.md`, one part per pull request, tests in the same PR:
 

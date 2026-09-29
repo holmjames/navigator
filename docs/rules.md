@@ -29,7 +29,7 @@ Decision(
 
 ## Channel choice
 
-Once every gate passes, pick the channel for the best contact on the committee (persona rank, then verified channel):
+Once every gate passes, pick the best contact on the committee, then the channel. Best contact is persona rank adjusted for the two things that beat seniority: a warm path of 0.70 or more counts as two ranks better, and being 30 to 120 days into the role counts as one rank better; ties go to the higher persona, then the stronger path, then the better verified channel. (This is why Larkspur's touch goes to the controller through the warm path and not to the CFO cold.) Then the channel:
 
 | Condition | Action | Fallback |
 |---|---|---|

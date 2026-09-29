@@ -47,6 +47,7 @@ class Contact:
     persona_rank: int
     country: str
     email_grade: Optional[str] = None       # A..F or None
+    role_start: Optional[date] = None
     has_mobile: bool = False
     touches_last_7d: int = 0
     warm_path_strength: float = 0.0
@@ -122,12 +123,23 @@ def _autonomy(state: AccountState, contact: Contact) -> Autonomy:
     return "approve"
 
 
-def _best_contact(state: AccountState) -> Optional[Contact]:
+def _effective_rank(c: Contact, today: date) -> float:
+    """Persona rank, adjusted for the two things that beat seniority: a strong warm path (two ranks better)
+    and being new in role, 30 to 120 days (one rank better). Lower is better. docs/rules.md, Channel choice."""
+    rank = float(c.persona_rank)
+    if c.warm_path_strength >= WARM_PATH_THRESHOLD:
+        rank -= 2
+    if c.role_start is not None and 30 <= (today - c.role_start).days <= 120:
+        rank -= 1
+    return rank
+
+
+def _best_contact(state: AccountState, today: date) -> Optional[Contact]:
     usable = [c for c in state.contacts if not c.dnc and not c.unsubscribed]
     if not usable:
         return None
-    # Persona rank first (1 is best), then a warm path, then a verified channel.
-    usable.sort(key=lambda c: (c.persona_rank, -c.warm_path_strength, c.email_grade or "Z"))
+    # Effective rank first, then warm-path strength, then a verified channel.
+    usable.sort(key=lambda c: (_effective_rank(c, today), -c.warm_path_strength, c.email_grade or "Z"))
     return usable[0]
 
 
@@ -159,7 +171,7 @@ def decide(state: AccountState, today: date) -> Decision:
         if not moved:
             return Decision("wait", "research_only", today + timedelta(days=30), "P4: monitor.")
 
-    contact = _best_contact(state)
+    contact = _best_contact(state, today)
     if contact is None:
         return Decision("research", "research_only", today, "No contact with a usable channel; prospect research runs.")
 
@@ -231,7 +243,7 @@ def _decide_follow_up(state: AccountState, contact: Contact, autonomy: Autonomy,
 
 
 def _decide_reply(state: AccountState, today: date) -> Decision:
-    contact = _best_contact(state)
+    contact = _best_contact(state, today)
     cid = contact.contact_id if contact else None
     rc = state.reply_class
     if rc == "interested":
