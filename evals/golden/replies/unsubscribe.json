@@ -1,0 +1,8 @@
+{
+  "case": "unsubscribe",
+  "text": "Please remove me from your list.",
+  "expect": {
+    "class": "unsubscribe",
+    "draft_required": false
+  }
+}

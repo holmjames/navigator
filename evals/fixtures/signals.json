@@ -1,0 +1,72 @@
+[
+  {
+    "signal_id": "sig_lark_001",
+    "account_id": "acc_larkspur",
+    "signal_type": "vendor_change",
+    "quote": "We're consolidating our travel and expense tools onto a single platform in the first half. That's part of the $40 million efficiency program we outlined in August.",
+    "speaker": "Dana Whitcombe, CFO",
+    "source_url": "https://receipts.example/transcripts/lksp-q3-2026#t=00:31:12",
+    "page_ref": "00:31:12",
+    "event_date": "2026-09-28",
+    "evidence_tier": 1,
+    "verified": true,
+    "source": "steadybase",
+    "event_key": "lksp:2026-09-28:vendor_change:1"
+  },
+  {
+    "signal_id": "sig_lark_002",
+    "account_id": "acc_larkspur",
+    "signal_type": "finance_hiring",
+    "quote": null,
+    "artifact": "Nine open finance and accounting roles on the careers page",
+    "source_url": "https://larkspurdynamics.example/careers?dept=finance",
+    "page_ref": null,
+    "event_date": "2026-09-17",
+    "evidence_tier": 2,
+    "verified": false,
+    "source": "clay",
+    "event_key": "clay:play-03:lksp:2026-09-17"
+  },
+  {
+    "signal_id": "sig_ostr_001",
+    "account_id": "acc_c81e728d9d4c2f636f067f89cc14862c",
+    "signal_type": "leadership_change",
+    "quote": "On August 12, 2026, the Board appointed Priyanka Desai as Vice President, Finance.",
+    "speaker": "8-K Item 5.02",
+    "source_url": "https://receipts.example/filings/osmd-8k-2026-08-13#page=2",
+    "page_ref": "page 2",
+    "event_date": "2026-08-13",
+    "evidence_tier": 1,
+    "verified": true,
+    "source": "steadybase",
+    "event_key": "osmd:2026-08-13:leadership_change:1"
+  },
+  {
+    "signal_id": "sig_fx16_001",
+    "account_id": "acc_c74d97b01eae257e44aa9d5bade97baf",
+    "signal_type": "travel_role_hiring",
+    "quote": null,
+    "artifact": "Job posting: Corporate Travel Manager, Chicago",
+    "source_url": "https://fixture16.example/jobs/corporate-travel-manager",
+    "page_ref": null,
+    "event_date": "2026-09-12",
+    "evidence_tier": 2,
+    "verified": false,
+    "source": "clay",
+    "event_key": "clay:play-03:fx16:2026-09-12"
+  },
+  {
+    "signal_id": "sig_fx17_001",
+    "account_id": "acc_70efdf2ec9b086079795c442636b55fb",
+    "signal_type": "other",
+    "quote": null,
+    "artifact": "Research summary suggests a finance systems review (no quotable source)",
+    "source_url": "https://research.example/fx17-summary",
+    "page_ref": null,
+    "event_date": "2026-09-20",
+    "evidence_tier": 3,
+    "verified": false,
+    "source": "clay",
+    "event_key": "clay:play-02:fx17:2026-09-20"
+  }
+]

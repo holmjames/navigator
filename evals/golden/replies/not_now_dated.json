@@ -1,0 +1,9 @@
+{
+  "case": "not_now_dated",
+  "text": "Not this quarter. Ping me after our fiscal year closes in January.",
+  "expect": {
+    "class": "not_now",
+    "date_month": 1,
+    "draft_required": true
+  }
+}

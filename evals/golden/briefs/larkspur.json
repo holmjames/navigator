@@ -1,0 +1,20 @@
+{
+  "account_id": "acc_larkspur",
+  "required": [
+    "consolidating our travel and expense tools",
+    "[sig_lark_001]",
+    "Concur",
+    "58 days",
+    "6 countries"
+  ],
+  "forbidden": [
+    "Expensify",
+    "pain point",
+    "frustrated",
+    "struggling"
+  ],
+  "no_signal": false,
+  "quotes_must_be_verbatim": [
+    "We're consolidating our travel and expense tools onto a single platform in the first half."
+  ]
+}

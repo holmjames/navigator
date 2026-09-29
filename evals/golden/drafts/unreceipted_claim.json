@@ -1,0 +1,16 @@
+{
+  "case": "unreceipted_claim",
+  "account_id": "acc_larkspur",
+  "contact_id": "c_miguel",
+  "channel": "email",
+  "country": "US",
+  "draft": {
+    "subject": "Concur renewal",
+    "email_body": "Miguel, congrats on the new role. I understand your Concur contract renews in March and the team has been frustrated with reconciliation. Happy to show what a switch looks like. Would 20 minutes next week work?",
+    "quoted_spans": []
+  },
+  "expect": {
+    "grade_at_most": "D+",
+    "ceiling_reason_contains": "unreceipted"
+  }
+}

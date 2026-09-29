@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "reply",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "interested",
+        "question",
+        "objection",
+        "not_now",
+        "out_of_office",
+        "referral",
+        "wrong_person",
+        "unsubscribe"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "extracted": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "referral": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": [
+        "questions",
+        "date",
+        "referral"
+      ]
+    },
+    "draft": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "needs_human": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary_for_rep": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "class",
+    "confidence",
+    "extracted",
+    "draft",
+    "needs_human",
+    "summary_for_rep"
+  ]
+}

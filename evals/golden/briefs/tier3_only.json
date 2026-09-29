@@ -1,0 +1,11 @@
+{
+  "account_id": "acc_70efdf2ec9b086079795c442636b55fb",
+  "required": [
+    "No receipted signal in the last 90 days"
+  ],
+  "forbidden": [
+    "finance systems review"
+  ],
+  "no_signal": true,
+  "note": "Only a tier 3 signal exists; the brief must list it under inferred and the why-now must say fit and timing."
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "market",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "what_moved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "who_reports": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "what_is_converting": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timing_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "what_moved",
+    "who_reports",
+    "what_is_converting",
+    "timing_changes"
+  ]
+}

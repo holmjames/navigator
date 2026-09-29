@@ -1,0 +1,36 @@
+# Navigator
+
+> Implementation spec for an AI agent team that runs outbound for a 500-rep BDR organization: research, drafted and QA-graded outreach, reply handling, next-best-action, a daily Slack playbook, and a Snowflake feedback loop that recalibrates scoring. Built on Snowflake, SteadyBase, Clay, MoltSets, Apollo, TheSwarm, Centralize, Nooks, Salesforce, Slack, OpenAI, and n8n.
+
+Author: James Holm. Status: specification with executable rules and scoring; not yet a running system.
+
+## Start here
+
+- [README](README.md): what this is and how to read it
+- [CLAUDE.md](CLAUDE.md): conventions, build order, the rules that are tests
+- [AGENTS.md](AGENTS.md): the same conventions for Codex, plus a map
+- [PROMPT.md](PROMPT.md): the kickoff prompt for a coding agent
+
+## Design
+
+- [Architecture](docs/architecture.md): five layers, every component's job, inputs, outputs, and replacement
+- [Data flow](docs/data-flow.md): what happens to a record at each hop, and how often
+- [Scoring](docs/scoring.md): fit 40, signal 35, timing 15, relationship 10, with one account worked through
+- [Rules of engagement](docs/rules.md): what the orchestrator does with an account, in order
+- [Autonomy tiers](docs/tiers.md): who sends on their own, caps, and the geography gate
+- [Pilot](docs/pilot.md): three weeks to a live pod, the account-level holdout, and the metrics
+- [Decisions](docs/decisions.md): defaults taken and open questions
+
+## Parts
+
+- [data](data/SPEC.md), [schema.sql](data/schema.sql), [scoring.sql](data/scoring.sql)
+- [ingest](ingest/SPEC.md)
+- [agents](agents/SPEC.md), [prompts](agents/prompts/), [orchestrator](agents/orchestrator/decide.py)
+- [slack](slack/SPEC.md), [cards](slack/cards.md)
+- [plays](plays/SPEC.md)
+- [ops](ops/SPEC.md)
+- [evals](evals/README.md)
+
+## Vendors
+
+- [SteadyBase](integrations/steadybase.md), [Clay](integrations/clay.md), [MoltSets](integrations/moltsets.md), [Apollo](integrations/apollo.md), [TheSwarm](integrations/theswarm.md), [Centralize](integrations/centralize.md), [Nooks](integrations/nooks.md), [Salesforce](integrations/salesforce.md), [Slack](integrations/slack.md), [Snowflake](integrations/snowflake.md), [OpenAI](integrations/openai.md), [n8n](integrations/n8n.md)

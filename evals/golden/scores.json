@@ -1,0 +1,22 @@
+{
+  "acc_larkspur": {
+    "fit": 37,
+    "signal": 32,
+    "timing": 12,
+    "relationship": 10,
+    "score": 91,
+    "priority": "P1",
+    "components": {
+      "fit_employees": 9,
+      "fit_travel": 12,
+      "fit_stack": 10,
+      "fit_growth": 6,
+      "timing_calendar": 6,
+      "timing_role": 6,
+      "timing_fye": 0
+    }
+  },
+  "acc_c81e728d9d4c2f636f067f89cc14862c": {
+    "note": "Ostrander: leadership_change tier 1 at 47 days old -> 22*1.0*0.5 = 11; VP Finance 48 days in role -> timing_role 6; last call 48 days ago -> calendar 3; card_only stack 5. Compute the rest from book.csv."
+  }
+}

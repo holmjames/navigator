@@ -1,0 +1,18 @@
+{
+  "case": "altered_quote",
+  "account_id": "acc_larkspur",
+  "contact_id": "c_miguel",
+  "channel": "email",
+  "country": "US",
+  "draft": {
+    "subject": "Your single-platform move",
+    "email_body": "Miguel, on the call Dana said \"we are moving all travel and expense to one platform this year.\" That is exactly what we do. Would 20 minutes next week be useful?",
+    "quoted_spans": [
+      "we are moving all travel and expense to one platform this year"
+    ]
+  },
+  "expect": {
+    "grade": "F",
+    "ceiling_reason_contains": "quote"
+  }
+}

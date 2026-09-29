@@ -1,0 +1,201 @@
+account_id,sfdc_id,name,domain,ticker,is_public,country,industry,employees,office_countries,office_count,headcount_growth_24m,stack_detected,segment,strategic_flag,owner_type,is_customer,has_open_opp,closed_lost_timing_18m,former_customer,last_earnings_call_date,next_earnings_call_date,fiscal_year_end_date,resolution_status,holdout
+acc_larkspur,001000000000000001,Larkspur Dynamics,larkspurdynamics.example,LKSP,true,US,Industrial services,5200,6,14,0.31,displacement,mid_market,false,bdr,false,false,false,false,2026-09-28,2026-11-05,,resolved,false
+acc_c81e728d9d4c2f636f067f89cc14862c,001000000000000002,Ostrander Medical Devices,ostrandermed.example,OSMD,true,US,Construction,2100,2,3,0.12,card_only,mid_market,false,bdr,false,false,false,false,2026-08-12,2026-11-10,,resolved,false
+acc_eccbc87e4b5ce2fe28308fd9f2a7baf3,001000000000000003,Fixture Co 3,fixture3.example,FX03,true,DE,Retail,120,1,1,0.31,card_only,smb,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_a87ff679a2f3e71d9181a67b7542122c,001000000000000004,Fixture Co 4,fixture4.example,FX04,true,US,Financial services,120,1,14,0.45,none,smb,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_e4da3b7fbbce2345d7772b0674a318d5,001000000000000005,Fixture Co 5,fixture5.example,FX05,true,US,Financial services,5200,1,2,-0.05,none,enterprise,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,true
+acc_1679091c5a880faf6fb5e6087eb1b2dc,001000000000000006,Fixture Co 6,fixture6.example,FX06,true,US,Healthcare services,5200,1,8,-0.05,none,enterprise,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,true
+acc_8f14e45fceea167a5a36dedd4bea2543,001000000000000007,Fixture Co 7,fixture7.example,FX07,true,CA,Media,350,1,8,0.31,none,mid_market,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_c9f0f895fb98ab9159f51fd0297e236d,001000000000000008,Fixture Co 8,fixture8.example,FX08,true,US,Construction,120,4,14,-0.05,none,smb,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_45c48cce2e2d7fbdea1afc51c7c6ad26,001000000000000009,Fixture Co 9,fixture9.example,FX09,true,US,Financial services,800,3,14,0.31,card_only,mid_market,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_d3d9446802a44259755d38e6d163e820,001000000000000010,Fixture Co 10,fixture10.example,FX10,true,GB,Manufacturing,9000,2,3,0.02,displacement,enterprise,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_6512bd43d9caa6e02c990b0a82652dca,001000000000000011,Fixture Co 11,fixture11.example,FX11,true,US,Software,1500,4,5,0.1,none,mid_market,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,true
+acc_c20ad4d76fe97759aa27a0c99bff6710,001000000000000012,Fixture Co 12,fixture12.example,FX12,true,FR,Healthcare services,120,1,8,0.18,displacement,smb,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,true
+acc_c51ce410c124a10e0db5e4b97fc2af39,001000000000000013,Fixture Co 13,fixture13.example,FX13,true,GB,Logistics,9000,3,1,0.45,displacement,enterprise,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,true
+acc_aab3238922bcc25a6f606eb525ffdc56,001000000000000014,Fixture Co 14,fixture14.example,FX14,true,GB,Construction,3200,4,5,0.31,card_only,enterprise,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,false
+acc_9bf31c7ff062936a96d3c8bd1f8f2ff3,001000000000000015,Fixture Co 15,fixture15.example,FX15,true,US,Software,1500,3,14,0.45,displacement,mid_market,false,bdr,false,false,false,false,2026-08-20,2026-11-12,,resolved,true
+acc_c74d97b01eae257e44aa9d5bade97baf,001000000000000016,Fixture Co 16,fixture16.example,,false,US,Healthcare services,9000,2,14,0.18,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_70efdf2ec9b086079795c442636b55fb,001000000000000017,Fixture Co 17,fixture17.example,,false,GB,Industrial services,9000,2,2,0.31,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_6f4922f45568161a8cdf4ad2299f6d23,001000000000000018,Fixture Co 18,fixture18.example,,false,FR,Industrial services,800,2,2,0.45,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_1f0e3dad99908345f7439f8ffabdffc4,001000000000000019,Fixture Co 19,fixture19.example,,false,DE,Retail,9000,1,2,0.18,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_98f13708210194c475687be6106a3b84,001000000000000020,Fixture Co 20,fixture20.example,,false,CA,Logistics,5200,4,3,0.45,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_3c59dc048e8850243be8079a5c74d079,001000000000000021,Fixture Co 21,fixture21.example,,false,GB,Retail,800,1,1,0.02,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_b6d767d2f8ed5d21a44b0e5886680cb9,001000000000000022,Fixture Co 22,fixture22.example,,false,US,Professional services,40,3,8,0.02,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_37693cfc748049e45d87b8c7d8b9aacd,001000000000000023,Fixture Co 23,fixture23.example,,false,CA,Industrial services,350,3,8,0.1,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_1ff1de774005f8da13f42943881c655f,001000000000000024,Fixture Co 24,fixture24.example,,false,GB,Logistics,25000,4,14,0.45,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_8e296a067a37563370ded05f5a3bf3ec,001000000000000025,Fixture Co 25,fixture25.example,,false,US,Manufacturing,25000,3,5,0.18,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_4e732ced3463d06de0ca9a15b6153677,001000000000000026,Fixture Co 26,fixture26.example,,false,US,Manufacturing,5200,1,2,-0.05,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_02e74f10e0327ad868d138f2b4fdd6f0,001000000000000027,Fixture Co 27,fixture27.example,,false,FR,Logistics,120,2,8,-0.05,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_33e75ff09dd601bbe69f351039152189,001000000000000028,Fixture Co 28,fixture28.example,,false,US,Financial services,350,4,1,0.1,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_6ea9ab1baa0efb9e19094440c317e21b,001000000000000029,Fixture Co 29,fixture29.example,,false,US,Software,800,4,5,0.02,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_34173cb38f07f89ddbebc2ac9128303f,001000000000000030,Fixture Co 30,fixture30.example,,false,CA,Construction,3200,3,1,-0.05,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_c16a5320fa475530d9583c34fd356ef5,001000000000000031,Fixture Co 31,fixture31.example,,false,FR,Manufacturing,9000,2,1,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_6364d3f0f495b6ab9dcf8d3b5c6e0b01,001000000000000032,Fixture Co 32,fixture32.example,,false,GB,Healthcare services,9000,6,2,0.31,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_182be0c5cdcd5072bb1864cdee4d3d6e,001000000000000033,Fixture Co 33,fixture33.example,,false,US,Media,3200,1,14,0.31,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_e369853df766fa44e1ed0ff613f563bd,001000000000000034,Fixture Co 34,fixture34.example,,false,CA,Software,1500,4,3,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_1c383cd30b7c298ab50293adfecb7b18,001000000000000035,Fixture Co 35,fixture35.example,,false,US,Media,25000,4,3,0.45,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_19ca14e7ea6328a42e0eb13d585e4c22,001000000000000036,Fixture Co 36,fixture36.example,,false,US,Professional services,5200,6,2,0.02,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_a5bfc9e07964f8dddeb95fc584cd965d,001000000000000037,Fixture Co 37,fixture37.example,,false,FR,Construction,40,1,3,0.18,card_only,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_a5771bce93e200c36f7cd9dfd0e5deaa,001000000000000038,Fixture Co 38,fixture38.example,,false,US,Financial services,3200,3,14,0.1,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_d67d8ab4f4c10bf22aa353e27879133c,001000000000000039,Fixture Co 39,fixture39.example,,false,US,Professional services,120,1,5,0.02,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_d645920e395fedad7bbbed0eca3fe2e0,001000000000000040,Fixture Co 40,fixture40.example,,false,US,Manufacturing,40,3,14,0.1,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_3416a75f4cea9109507cacd8e2f2aefc,001000000000000041,Fixture Co 41,fixture41.example,,false,US,Software,5200,6,2,0.18,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_a1d0c6e83f027327d8461063f4ac58a6,001000000000000042,Fixture Co 42,fixture42.example,,false,DE,Construction,120,6,5,0.18,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_17e62166fc8586dfa4d1bc0e1742c08b,001000000000000043,Fixture Co 43,fixture43.example,,false,US,Logistics,350,1,1,0.02,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_f7177163c833dff4b38fc8d2872f1ec6,001000000000000044,Fixture Co 44,fixture44.example,,false,FR,Logistics,9000,6,3,0.02,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_6c8349cc7260ae62e3b1396831a8398f,001000000000000045,Fixture Co 45,fixture45.example,,false,US,Industrial services,40,6,14,-0.05,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_d9d4f495e875a2e075a1a4a6e1b9770f,001000000000000046,Fixture Co 46,fixture46.example,,false,US,Retail,800,1,1,0.1,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_67c6a1e7ce56d3d6fa748ab6d9af3fd7,001000000000000047,Fixture Co 47,fixture47.example,,false,CA,Media,800,4,3,0.1,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_642e92efb79421734881b53e1e1b18b6,001000000000000048,Fixture Co 48,fixture48.example,,false,DE,Logistics,40,6,3,0.18,none,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_f457c545a9ded88f18ecee47145a72c0,001000000000000049,Fixture Co 49,fixture49.example,,false,DE,Media,350,4,2,0.31,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_c0c7c76d30bd3dcaefc96f40275bdc0a,001000000000000050,Fixture Co 50,fixture50.example,,false,US,Manufacturing,350,4,1,0.02,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_2838023a778dfaecdc212708f721b788,001000000000000051,Fixture Co 51,fixture51.example,,false,US,Manufacturing,120,4,1,0.1,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_9a1158154dfa42caddbd0694a4e9bdc8,001000000000000052,Fixture Co 52,fixture52.example,,false,FR,Software,25000,1,2,0.02,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_d82c8d1619ad8176d665453cfb2e55f0,001000000000000053,Fixture Co 53,fixture53.example,,false,US,Software,25000,3,8,-0.05,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_a684eceee76fc522773286a895bc8436,001000000000000054,Fixture Co 54,fixture54.example,,false,FR,Construction,25000,4,8,0.02,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_b53b3a3d6ab90ce0268229151c9bde11,001000000000000055,Fixture Co 55,fixture55.example,,false,CA,Manufacturing,25000,4,5,0.31,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_9f61408e3afb633e50cdf1b20de6f466,001000000000000056,Fixture Co 56,fixture56.example,,false,CA,Media,800,3,2,0.18,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_72b32a1f754ba1c09b3695e0cb6cde7f,001000000000000057,Fixture Co 57,fixture57.example,,false,DE,Manufacturing,3200,1,14,0.02,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_66f041e16a60928b05a7e228a89c3799,001000000000000058,Fixture Co 58,fixture58.example,,false,US,Professional services,1500,1,2,0.45,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_093f65e080a295f8076b1c5722a46aa2,001000000000000059,Fixture Co 59,fixture59.example,,false,GB,Logistics,1500,1,5,0.02,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_072b030ba126b2f4b2374f342be9ed44,001000000000000060,Fixture Co 60,fixture60.example,,false,US,Retail,9000,1,14,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_7f39f8317fbdb1988ef4c628eba02591,001000000000000061,Fixture Co 61,fixture61.example,,false,DE,Media,5200,2,5,0.02,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_44f683a84163b3523afe57c2e008bc8c,001000000000000062,Fixture Co 62,fixture62.example,,false,GB,Software,3200,1,3,0.31,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_03afdbd66e7929b125f8597834fa83a4,001000000000000063,Fixture Co 63,fixture63.example,,false,FR,Industrial services,5200,2,8,0.31,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_ea5d2f1c4608232e07d3aa3d998e5135,001000000000000064,Fixture Co 64,fixture64.example,,false,US,Software,800,1,1,0.1,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_fc490ca45c00b1249bbe3554a4fdf6fb,001000000000000065,Fixture Co 65,fixture65.example,,false,US,Logistics,1500,1,5,0.45,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_3295c76acbf4caaed33c36b1b5fc2cb1,001000000000000066,Fixture Co 66,fixture66.example,,false,DE,Logistics,25000,4,8,0.18,none,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_735b90b4568125ed6c3f678819b6e058,001000000000000067,Fixture Co 67,fixture67.example,,false,GB,Software,1500,1,14,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_a3f390d88e4c41f2747bfa2f1b5f87db,001000000000000068,Fixture Co 68,fixture68.example,,false,US,Healthcare services,40,6,1,0.1,displacement,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_14bfa6bb14875e45bba028a21ed38046,001000000000000069,Fixture Co 69,fixture69.example,,false,US,Software,1500,1,5,-0.05,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_7cbbc409ec990f19c78c75bd1e06f215,001000000000000070,Fixture Co 70,fixture70.example,,false,DE,Healthcare services,350,1,8,0.45,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_e2c420d928d4bf8ce0ff2ec19b371514,001000000000000071,Fixture Co 71,fixture71.example,,false,US,Logistics,1500,1,2,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_32bb90e8976aab5298d5da10fe66f21d,001000000000000072,Fixture Co 72,fixture72.example,,false,CA,Media,800,2,5,0.31,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_d2ddea18f00665ce8623e36bd4e3c7c5,001000000000000073,Fixture Co 73,fixture73.example,,false,US,Healthcare services,3200,1,3,-0.05,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_ad61ab143223efbc24c7d2583be69251,001000000000000074,Fixture Co 74,fixture74.example,,false,US,Media,25000,1,8,0.18,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_d09bf41544a3365a46c9077ebb5e35c3,001000000000000075,Fixture Co 75,fixture75.example,,false,FR,Software,5200,6,5,0.31,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_fbd7939d674997cdb4692d34de8633c4,001000000000000076,Fixture Co 76,fixture76.example,,false,CA,Professional services,800,2,2,0.45,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_28dd2c7955ce926456240b2ff0100bde,001000000000000077,Fixture Co 77,fixture77.example,,false,US,Retail,3200,1,2,-0.05,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_35f4a8d465e6e1edc05f3d8ab658c551,001000000000000078,Fixture Co 78,fixture78.example,,false,CA,Retail,350,1,1,0.45,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_d1fe173d08e959397adf34b1d77e88d7,001000000000000079,Fixture Co 79,fixture79.example,,false,CA,Financial services,800,6,3,-0.05,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_f033ab37c30201f73f142449d037028d,001000000000000080,Fixture Co 80,fixture80.example,,false,US,Logistics,1500,3,1,0.1,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_43ec517d68b6edd3015b3edc9a11367b,001000000000000081,Fixture Co 81,fixture81.example,,false,GB,Media,3200,1,1,0.1,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_9778d5d219c5080b9a6a17bef029331c,001000000000000082,Fixture Co 82,fixture82.example,,false,GB,Logistics,40,2,5,-0.05,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_fe9fc289c3ff0af142b6d3bead98a923,001000000000000083,Fixture Co 83,fixture83.example,,false,CA,Media,800,1,8,-0.05,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_68d30a9594728bc39aa24be94b319d21,001000000000000084,Fixture Co 84,fixture84.example,,false,CA,Software,350,3,8,-0.05,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_3ef815416f775098fe977004015c6193,001000000000000085,Fixture Co 85,fixture85.example,,false,US,Healthcare services,1500,6,2,-0.05,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_93db85ed909c13838ff95ccfa94cebd9,001000000000000086,Fixture Co 86,fixture86.example,,false,US,Financial services,5200,2,14,0.18,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_c7e1249ffc03eb9ded908c236bd1996d,001000000000000087,Fixture Co 87,fixture87.example,,false,CA,Financial services,350,1,14,0.31,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_2a38a4a9316c49e5a833517c45d31070,001000000000000088,Fixture Co 88,fixture88.example,,false,DE,Media,350,4,8,0.31,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_7647966b7343c29048673252e490f736,001000000000000089,Fixture Co 89,fixture89.example,,false,US,Software,40,1,2,0.45,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_8613985ec49eb8f757ae6439e879bb2a,001000000000000090,Fixture Co 90,fixture90.example,,false,US,Retail,9000,4,1,0.45,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_54229abfcfa5649e7003b83dd4755294,001000000000000091,Fixture Co 91,fixture91.example,,false,US,Manufacturing,1500,1,5,-0.05,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_92cc227532d17e56e07902b254dfad10,001000000000000092,Fixture Co 92,fixture92.example,,false,US,Media,120,6,14,0.18,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_98dce83da57b0395e163467c9dae521b,001000000000000093,Fixture Co 93,fixture93.example,,false,US,Healthcare services,800,6,2,0.02,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_f4b9ec30ad9f68f89b29639786cb62ef,001000000000000094,Fixture Co 94,fixture94.example,,false,FR,Manufacturing,5200,1,5,0.45,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_812b4ba287f5ee0bc9d43bbf5bbe87fb,001000000000000095,Fixture Co 95,fixture95.example,,false,US,Financial services,800,1,8,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_26657d5ff9020d2abefe558796b99584,001000000000000096,Fixture Co 96,fixture96.example,,false,CA,Healthcare services,350,1,5,-0.05,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_e2ef524fbf3d9fe611d5a8e90fefdc9c,001000000000000097,Fixture Co 97,fixture97.example,,false,CA,Software,800,6,5,0.1,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_ed3d2c21991e3bef5e069713af9fa6ca,001000000000000098,Fixture Co 98,fixture98.example,,false,CA,Manufacturing,9000,3,1,0.31,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_ac627ab1ccbdb62ec96e702f07f6425b,001000000000000099,Fixture Co 99,fixture99.example,,false,CA,Software,9000,1,3,0.18,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_f899139df5e1059396431415e770c6dd,001000000000000100,Fixture Co 100,fixture100.example,,false,FR,Healthcare services,5200,1,2,-0.05,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_38b3eff8baf56627478ec76a704e9b52,001000000000000101,Fixture Co 101,fixture101.example,,false,US,Logistics,25000,2,3,0.02,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_ec8956637a99787bd197eacd77acce5e,001000000000000102,Fixture Co 102,fixture102.example,,false,CA,Software,3200,1,5,0.18,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_6974ce5ac660610b44d9b9fed0ff9548,001000000000000103,Fixture Co 103,fixture103.example,,false,US,Logistics,40,3,14,0.18,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_c9e1074f5b3f9fc8ea15d152add07294,001000000000000104,Fixture Co 104,fixture104.example,,false,CA,Logistics,5200,2,5,0.1,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_65b9eea6e1cc6bb9f0cd2a47751a186f,001000000000000105,Fixture Co 105,fixture105.example,,false,GB,Industrial services,3200,2,5,-0.05,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_f0935e4cd5920aa6c7c996a5ee53a70f,001000000000000106,Fixture Co 106,fixture106.example,,false,US,Healthcare services,1500,2,1,0.18,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_a97da629b098b75c294dffdc3e463904,001000000000000107,Fixture Co 107,fixture107.example,,false,US,Construction,5200,2,1,0.1,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_a3c65c2974270fd093ee8a9bf8ae7d0b,001000000000000108,Fixture Co 108,fixture108.example,,false,US,Healthcare services,350,1,3,0.18,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_2723d092b63885e0d7c260cc007e8b9d,001000000000000109,Fixture Co 109,fixture109.example,,false,GB,Professional services,3200,3,1,0.45,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_5f93f983524def3dca464469d2cf9f3e,001000000000000110,Fixture Co 110,fixture110.example,,false,US,Software,40,6,5,0.18,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_698d51a19d8a121ce581499d7b701668,001000000000000111,Fixture Co 111,fixture111.example,,false,US,Healthcare services,9000,1,8,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_7f6ffaa6bb0b408017b62254211691b5,001000000000000112,Fixture Co 112,fixture112.example,,false,FR,Retail,3200,2,3,0.1,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_73278a4a86960eeb576a8fd4c9ec6997,001000000000000113,Fixture Co 113,fixture113.example,,false,CA,Retail,800,2,5,0.31,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_5fd0b37cd7dbbb00f97ba6ce92bf5add,001000000000000114,Fixture Co 114,fixture114.example,,false,DE,Software,350,6,2,-0.05,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_2b44928ae11fb9384c4cf38708677c48,001000000000000115,Fixture Co 115,fixture115.example,,false,FR,Media,800,3,3,0.18,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_c45147dee729311ef5b5c3003946c48f,001000000000000116,Fixture Co 116,fixture116.example,,false,US,Media,800,1,1,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_eb160de1de89d9058fcb0b968dbbbd68,001000000000000117,Fixture Co 117,fixture117.example,,false,US,Construction,800,2,3,0.31,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_5ef059938ba799aaa845e1c2e8a762bd,001000000000000118,Fixture Co 118,fixture118.example,,false,US,Retail,5200,3,14,0.31,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_07e1cd7dca89a1678042477183b7ac3f,001000000000000119,Fixture Co 119,fixture119.example,,false,DE,Healthcare services,3200,1,5,0.1,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_da4fb5c6e93e74d3df8527599fa62642,001000000000000120,Fixture Co 120,fixture120.example,,false,GB,Logistics,25000,4,14,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_4c56ff4ce4aaf9573aa5dff913df997a,001000000000000121,Fixture Co 121,fixture121.example,,false,CA,Professional services,5200,3,14,0.18,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_a0a080f42e6f13b3a2df133f073095dd,001000000000000122,Fixture Co 122,fixture122.example,,false,CA,Industrial services,350,1,5,0.45,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_202cb962ac59075b964b07152d234b70,001000000000000123,Fixture Co 123,fixture123.example,,false,FR,Industrial services,120,3,8,0.18,card_only,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_c8ffe9a587b126f152ed3d89a146b445,001000000000000124,Fixture Co 124,fixture124.example,,false,US,Software,800,1,2,0.31,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_3def184ad8f4755ff269862ea77393dd,001000000000000125,Fixture Co 125,fixture125.example,,false,US,Manufacturing,120,4,1,-0.05,displacement,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_069059b7ef840f0c74a814ec9237b6ec,001000000000000126,Fixture Co 126,fixture126.example,,false,US,Financial services,40,6,14,0.1,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_ec5decca5ed3d6b8079e2e7e7bacc9f2,001000000000000127,Fixture Co 127,fixture127.example,,false,CA,Media,5200,6,1,-0.05,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_76dc611d6ebaafc66cc0879c71b5db5c,001000000000000128,Fixture Co 128,fixture128.example,,false,CA,Media,800,3,3,0.02,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_d1f491a404d6854880943e5c3cd9ca25,001000000000000129,Fixture Co 129,fixture129.example,,false,US,Industrial services,25000,2,5,0.1,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_9b8619251a19057cff70779273e95aa6,001000000000000130,Fixture Co 130,fixture130.example,,false,US,Manufacturing,25000,1,8,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_1afa34a7f984eeabdbb0a7d494132ee5,001000000000000131,Fixture Co 131,fixture131.example,,false,DE,Healthcare services,40,1,2,0.18,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_65ded5353c5ee48d0b7d48c591b8f430,001000000000000132,Fixture Co 132,fixture132.example,,false,DE,Software,1500,1,14,0.18,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_9fc3d7152ba9336a670e36d0ed79bc43,001000000000000133,Fixture Co 133,fixture133.example,,false,US,Manufacturing,40,6,3,0.45,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_02522a2b2726fb0a03bb19f2d8d9524d,001000000000000134,Fixture Co 134,fixture134.example,,false,GB,Retail,800,1,3,0.45,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_7f1de29e6da19d22b51c68001e7e0e54,001000000000000135,Fixture Co 135,fixture135.example,,false,US,Professional services,9000,1,3,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_42a0e188f5033bc65bf8d78622277c4e,001000000000000136,Fixture Co 136,fixture136.example,,false,FR,Professional services,1500,2,1,0.31,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_3988c7f88ebcb58c6ce932b957b6f332,001000000000000137,Fixture Co 137,fixture137.example,,false,US,Professional services,9000,3,14,-0.05,none,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_013d407166ec4fa56eb1e1f8cbe183b9,001000000000000138,Fixture Co 138,fixture138.example,,false,US,Retail,40,1,1,0.31,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_e00da03b685a0dd18fb6a08af0923de0,001000000000000139,Fixture Co 139,fixture139.example,,false,DE,Industrial services,40,1,5,0.18,none,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_1385974ed5904a438616ff7bdb3f7439,001000000000000140,Fixture Co 140,fixture140.example,,false,GB,Software,120,1,3,0.02,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_0f28b5d49b3020afeecd95b4009adf4c,001000000000000141,Fixture Co 141,fixture141.example,,false,FR,Industrial services,1500,6,14,0.18,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_a8baa56554f96369ab93e4f3bb068c22,001000000000000142,Fixture Co 142,fixture142.example,,false,GB,Manufacturing,350,1,1,-0.05,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_903ce9225fca3e988c2af215d4e544d3,001000000000000143,Fixture Co 143,fixture143.example,,false,US,Construction,5200,1,8,0.02,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_0a09c8844ba8f0936c20bd791130d6b6,001000000000000144,Fixture Co 144,fixture144.example,,false,GB,Healthcare services,5200,1,1,0.45,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_2b24d495052a8ce66358eb576b8912c8,001000000000000145,Fixture Co 145,fixture145.example,,false,US,Construction,25000,3,2,0.1,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_a5e00132373a7031000fd987a3c9f87b,001000000000000146,Fixture Co 146,fixture146.example,,false,FR,Industrial services,5200,1,14,0.18,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_8d5e957f297893487bd98fa830fa6413,001000000000000147,Fixture Co 147,fixture147.example,,false,DE,Industrial services,9000,1,1,0.1,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_47d1e990583c9c67424d369f3414728e,001000000000000148,Fixture Co 148,fixture148.example,,false,US,Financial services,3200,2,3,0.1,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_f2217062e9a397a1dca429e7d70bc6ca,001000000000000149,Fixture Co 149,fixture149.example,,false,US,Healthcare services,3200,2,3,-0.05,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_7ef605fc8dba5425d6965fbd4c8fbe1f,001000000000000150,Fixture Co 150,fixture150.example,,false,US,Industrial services,800,1,5,0.45,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_a8f15eda80c50adb0e71943adc8015cf,001000000000000151,Fixture Co 151,fixture151.example,,false,DE,Healthcare services,5200,3,2,0.18,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_37a749d808e46495a8da1e5352d03cae,001000000000000152,Fixture Co 152,fixture152.example,,false,US,Healthcare services,350,4,2,0.1,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_b3e3e393c77e35a4a3f3cbd1e429b5dc,001000000000000153,Fixture Co 153,fixture153.example,,false,FR,Construction,120,4,2,0.18,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_1d7f7abc18fcb43975065399b0d1e48e,001000000000000154,Fixture Co 154,fixture154.example,,false,US,Retail,120,6,1,0.18,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_2a79ea27c279e471f4d180b08d62b00a,001000000000000155,Fixture Co 155,fixture155.example,,false,GB,Logistics,5200,1,1,0.1,none,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_1c9ac0159c94d8d0cbedc973445af2da,001000000000000156,Fixture Co 156,fixture156.example,,false,US,Professional services,120,3,5,0.45,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_6c4b761a28b734fe93831e3fb400ce87,001000000000000157,Fixture Co 157,fixture157.example,,false,US,Professional services,350,3,5,0.31,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_06409663226af2f3114485aa4e0a23b4,001000000000000158,Fixture Co 158,fixture158.example,,false,US,Media,120,2,3,0.1,none,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_140f6969d5213fd0ece03148e62e461e,001000000000000159,Fixture Co 159,fixture159.example,,false,CA,Construction,1500,6,3,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_b73ce398c39f506af761d2277d853a92,001000000000000160,Fixture Co 160,fixture160.example,,false,US,Logistics,800,1,2,0.1,none,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_bd4c9ab730f5513206b999ec0d90d1fb,001000000000000161,Fixture Co 161,fixture161.example,,false,US,Construction,120,3,3,0.02,none,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_82aa4b0af34c2313a562076992e50aa3,001000000000000162,Fixture Co 162,fixture162.example,,false,US,Software,9000,1,1,-0.05,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_0777d5c17d4066b82ab86dff8a46af6f,001000000000000163,Fixture Co 163,fixture163.example,,false,US,Manufacturing,3200,1,3,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_fa7cdfad1a5aaf8370ebeda47a1ff1c3,001000000000000164,Fixture Co 164,fixture164.example,,false,US,Professional services,800,1,3,0.31,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_9766527f2b5d3e95d4a733fcfb77bd7e,001000000000000165,Fixture Co 165,fixture165.example,,false,FR,Financial services,1500,6,1,-0.05,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_7e7757b1e12abcb736ab9a754ffb617a,001000000000000166,Fixture Co 166,fixture166.example,,false,GB,Professional services,40,2,3,0.02,displacement,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_5878a7ab84fb43402106c575658472fa,001000000000000167,Fixture Co 167,fixture167.example,,false,US,Healthcare services,40,4,14,0.45,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_006f52e9102a8d3be2fe5614f42ba989,001000000000000168,Fixture Co 168,fixture168.example,,false,US,Construction,5200,6,3,0.02,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_3636638817772e42b59d74cff571fbb3,001000000000000169,Fixture Co 169,fixture169.example,,false,CA,Software,800,1,5,0.31,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_149e9677a5989fd342ae44213df68868,001000000000000170,Fixture Co 170,fixture170.example,,false,US,Retail,120,3,14,0.31,displacement,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_a4a042cf4fd6bfb47701cbc8a1653ada,001000000000000171,Fixture Co 171,fixture171.example,,false,US,Logistics,5200,6,3,0.18,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_1ff8a7b5dc7a7d1f0ed65aaa29c04b1e,001000000000000172,Fixture Co 172,fixture172.example,,false,CA,Retail,40,2,14,0.31,card_only,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_f7e6c85504ce6e82442c770f7c8606f0,001000000000000173,Fixture Co 173,fixture173.example,,false,DE,Retail,40,2,14,0.02,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_bf8229696f7a3bb4700cfddef19fa23f,001000000000000174,Fixture Co 174,fixture174.example,,false,DE,Professional services,40,3,2,0.18,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_82161242827b703e6acf9c726942a1e4,001000000000000175,Fixture Co 175,fixture175.example,,false,US,Retail,3200,3,2,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_38af86134b65d0f10fe33d30dd76442e,001000000000000176,Fixture Co 176,fixture176.example,,false,US,Media,350,6,5,-0.05,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_96da2f590cd7246bbde0051047b0d6f7,001000000000000177,Fixture Co 177,fixture177.example,,false,GB,Media,350,1,3,0.1,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,true
+acc_8f85517967795eeef66c225f7883bdcb,001000000000000178,Fixture Co 178,fixture178.example,,false,US,Software,120,3,5,0.02,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_8f53295a73878494e9bc8dd6c3c7104f,001000000000000179,Fixture Co 179,fixture179.example,,false,US,Industrial services,9000,2,1,0.31,none,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_045117b0e0a11a242b9765e79cbf113f,001000000000000180,Fixture Co 180,fixture180.example,,false,DE,Software,350,6,2,0.31,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_fc221309746013ac554571fbd180e1c8,001000000000000181,Fixture Co 181,fixture181.example,,false,US,Manufacturing,350,4,2,-0.05,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_4c5bde74a8f110656874902f07378009,001000000000000182,Fixture Co 182,fixture182.example,,false,US,Retail,3200,1,2,0.02,none,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_cedebb6e872f539bef8c3f919874e9d7,001000000000000183,Fixture Co 183,fixture183.example,,false,US,Industrial services,25000,6,1,0.45,card_only,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_6cdd60ea0045eb7a6ec44c54d29ed402,001000000000000184,Fixture Co 184,fixture184.example,,false,US,Retail,9000,4,14,0.1,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_eecca5b6365d9607ee5a9d336962c534,001000000000000185,Fixture Co 185,fixture185.example,,false,DE,Healthcare services,800,3,5,0.45,card_only,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_9872ed9fc22fc182d371c3e9ed316094,001000000000000186,Fixture Co 186,fixture186.example,,false,FR,Media,9000,1,1,-0.05,none,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_31fefc0e570cb3860f2a6d4b38c6490d,001000000000000187,Fixture Co 187,fixture187.example,,false,FR,Manufacturing,800,3,8,0.18,displacement,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_9dcb88e0137649590b755372b040afad,001000000000000188,Fixture Co 188,fixture188.example,,false,FR,Retail,120,1,2,0.1,card_only,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_a2557a7b2e94197ff767970b67041697,001000000000000189,Fixture Co 189,fixture189.example,,false,GB,Software,9000,4,8,0.45,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,false
+acc_cfecdb276f634854f3ef915e2e980c31,001000000000000190,Fixture Co 190,fixture190.example,,false,US,Logistics,120,6,3,0.45,none,smb,false,bdr,false,false,false,false,,,,resolved,true
+acc_0aa1883c6411f7873cb83dacb17b0afc,001000000000000191,Fixture Co 191,fixture191.example,,false,US,Industrial services,25000,3,14,0.02,displacement,enterprise,false,bdr,false,false,false,false,,,,resolved,true
+acc_58a2fc6ed39fd083f55d4182bf88826d,001000000000000192,Fixture Co 192,fixture192.example,,false,US,Financial services,120,1,2,0.18,card_only,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_bd686fd640be98efaae0091fa301e613,001000000000000193,Fixture Co 193,fixture193.example,,false,US,Professional services,120,2,8,0.1,displacement,smb,false,bdr,false,false,false,false,,,,resolved,false
+acc_a597e50502f5ff68e3e25b9114205d4a,001000000000000194,Fixture Co 194,fixture194.example,,false,GB,Financial services,1500,3,2,0.1,none,mid_market,false,bdr,false,false,false,false,,,,resolved,false
+acc_0336dcbab05b9d5ad24f4333c7658a0e,001000000000000195,Fixture Co 20 Europe GmbH,fixture20.example,,false,DE,Professional services,1500,4,8,0.02,card_only,mid_market,false,bdr,false,false,false,false,,,,ambiguous,false
+acc_084b6fbb10729ed4da8c3d3f5a3ae7c9,001000000000000196,Fixture Co 21 Holdings,fixture21.example,,false,GB,Industrial services,800,1,5,0.02,none,mid_market,false,bdr,false,false,false,false,,,,conflict,true
+acc_85d8ce590ad8981ca2c8286f79f59954,001000000000000197,Fixture Co 22,,,false,CA,Construction,5200,1,3,-0.05,none,enterprise,false,bdr,false,false,false,false,,,,no_match,true
+acc_0e65972dce68dad4d52d063967f0a705,001000000000000198,Fixture Co 23 Canada,fixture23.example,,false,CA,Construction,9000,4,8,0.31,none,enterprise,false,bdr,false,false,false,false,,,,ambiguous,true
+acc_84d9ee44e457ddef7f2c4f25dc8fa865,001000000000000199,Fixture Co 24 Services,fixture24.example,,false,US,Healthcare services,25000,6,5,0.45,card_only,enterprise,false,bdr,false,false,false,false,,,,ambiguous,true
+acc_3644a684f98ea8fe223c713b77189a77,001000000000000200,Fixture Co 25 Inc,fixture25.example,,false,CA,Retail,3200,4,2,0.1,card_only,enterprise,false,bdr,false,false,false,false,,,,conflict,false

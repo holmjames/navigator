@@ -1,0 +1,9 @@
+{
+  "case": "referral",
+  "text": "This sits with Anika Rao, our VP of FP&A. Copying her.",
+  "expect": {
+    "class": "referral",
+    "referral_name": "Anika Rao",
+    "draft_required": true
+  }
+}

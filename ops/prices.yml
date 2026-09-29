@@ -1,0 +1,23 @@
+# Unit prices for the cost meter. Public list prices as of 2026-09-28. A contract price replaces any of them by PR.
+as_of: 2026-09-28
+openai:
+  gpt-5.5:        { input_per_1m: 5.00, output_per_1m: 30.00, cached_input_per_1m: 0.50, batch_discount: 0.50 }
+  gpt-5.6-sol:    { input_per_1m: 4.00, output_per_1m: 20.00, cached_input_per_1m: 0.40, batch_discount: 0.50, note: "promotional through 2026-11-21" }
+  gpt-5-nano:     { input_per_1m: 0.05, output_per_1m: 0.40, cached_input_per_1m: 0.005, batch_discount: 0.50 }
+clay:
+  plan_per_month: 495          # Growth list; Enterprise is custom
+  per_data_credit: 0.05        # published floor; in-app rates vary by provider
+moltsets:
+  plan_per_month: 397          # Business tier, flat
+  mobile_tokens_included: 150
+  extra_mobile_token: 0.20
+theswarm:
+  plan_per_month: 99           # Premium, 12,000 credits included
+  credits_included: 12000
+  per_extra_credit: 0.10
+steadybase:
+  plan_per_month: null         # Operate tier quoted per engagement; Build is 99 for one key without a private book
+centralize:
+  per_seat_per_month: 49       # Pro list; Enterprise (Salesforce integration) is custom
+snowflake:
+  per_credit: 3.00             # Enterprise edition, US regions; confirm Navan's contract rate

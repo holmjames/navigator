@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "qa",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "grade": {
+      "type": "string",
+      "enum": [
+        "A+",
+        "A",
+        "A-",
+        "B+",
+        "B",
+        "B-",
+        "C+",
+        "C",
+        "C-",
+        "D+",
+        "D",
+        "D-",
+        "F"
+      ]
+    },
+    "ceiling_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "line": {
+            "type": "string"
+          },
+          "issue": {
+            "type": "string"
+          },
+          "fix": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "line",
+          "issue",
+          "fix"
+        ]
+      }
+    },
+    "fixed_body": {
+      "type": "string"
+    },
+    "claims_traced": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim",
+          "source"
+        ]
+      }
+    }
+  },
+  "required": [
+    "grade",
+    "ceiling_reason",
+    "notes",
+    "fixed_body",
+    "claims_traced"
+  ]
+}

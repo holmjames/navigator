@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "draft",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "subject": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "email_body": {
+      "type": "string"
+    },
+    "call_opener": {
+      "type": "string"
+    },
+    "linkedin_note": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "receipts_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quoted_spans": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "subject",
+    "email_body",
+    "call_opener",
+    "linkedin_note",
+    "receipts_used",
+    "quoted_spans"
+  ]
+}

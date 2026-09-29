@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: steadybase_signals
+      - name: steadybase_people
+      - name: steadybase_events
+      - name: clay_rows
+      - name: sfdc_account
+      - name: sfdc_contact
+      - name: sfdc_opportunity
+      - name: sfdc_task
+      - name: apollo_events
+      - name: nooks_calls
+      - name: swarm_paths
+      - name: moltsets_contacts
+      - name: ingest_rejects

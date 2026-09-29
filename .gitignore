@@ -1,0 +1,29 @@
+# secrets and local config
+.env
+.env.*
+*.pem
+*.key
+.mcp.json
+.snowflake/
+.sf/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+
+# dbt
+data/dbt/target/
+data/dbt/dbt_packages/
+data/dbt/logs/
+
+# n8n exports must be checked in with credentials stripped; raw exports go here
+ingest/n8n/raw/
+
+# scratch
+*.log
+.DS_Store

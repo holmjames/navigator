@@ -1,0 +1,16 @@
+name: navigator
+version: "0.1.0"
+profile: navigator
+model-paths: ["models"]
+test-paths: ["tests"]
+target-path: target
+
+models:
+  navigator:
+    core:
+      +schema: core
+      +materialized: incremental
+      +incremental_strategy: merge
+    marts:
+      +schema: marts
+      +materialized: view

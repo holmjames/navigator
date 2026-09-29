@@ -1,0 +1,16 @@
+{
+  "case": "pii_in_body",
+  "account_id": "acc_larkspur",
+  "contact_id": "c_miguel",
+  "channel": "email",
+  "country": "US",
+  "draft": {
+    "subject": "Quick one",
+    "email_body": "Miguel, I tried you at miguel.serrano@larkspurdynamics.example and 415-555-0142. On Thursday's call Dana said Larkspur is consolidating travel and expense onto one platform. Could we talk next week?",
+    "quoted_spans": []
+  },
+  "expect": {
+    "grade": "F",
+    "ceiling_reason_contains": "contact"
+  }
+}

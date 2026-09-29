@@ -1,0 +1,54 @@
+[
+  {
+    "contact_id": "c_dana",
+    "account_id": "acc_larkspur",
+    "first_name": "Dana",
+    "last_name": "Whitcombe",
+    "title": "Chief Financial Officer",
+    "persona": "cfo",
+    "persona_rank": 1,
+    "role_start": "2021-03-01",
+    "country": "US",
+    "email_grade": "A",
+    "has_mobile": false
+  },
+  {
+    "contact_id": "c_miguel",
+    "account_id": "acc_larkspur",
+    "first_name": "Miguel",
+    "last_name": "Serrano",
+    "title": "Controller",
+    "persona": "controller",
+    "persona_rank": 2,
+    "role_start": "2026-08-02",
+    "country": "US",
+    "email_grade": "A",
+    "has_mobile": true
+  },
+  {
+    "contact_id": "c_anika",
+    "account_id": "acc_larkspur",
+    "first_name": "Anika",
+    "last_name": "Rao",
+    "title": "VP, FP&A",
+    "persona": "fpa",
+    "persona_rank": 5,
+    "role_start": "2023-06-15",
+    "country": "US",
+    "email_grade": "B",
+    "has_mobile": false
+  },
+  {
+    "contact_id": "c_priyanka",
+    "account_id": "acc_c81e728d9d4c2f636f067f89cc14862c",
+    "first_name": "Priyanka",
+    "last_name": "Desai",
+    "title": "Vice President, Finance",
+    "persona": "vp_finance",
+    "persona_rank": 4,
+    "role_start": "2026-08-12",
+    "country": "US",
+    "email_grade": "A",
+    "has_mobile": false
+  }
+]

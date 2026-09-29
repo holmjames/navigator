@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "brief",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "why_now": {
+      "type": "string"
+    },
+    "footprint": {
+      "type": "string"
+    },
+    "stack": {
+      "type": "string"
+    },
+    "timing": {
+      "type": "string"
+    },
+    "risk": {
+      "type": "string"
+    },
+    "inferred": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "no_signal": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "why_now",
+    "footprint",
+    "stack",
+    "timing",
+    "risk",
+    "inferred",
+    "sources",
+    "no_signal"
+  ]
+}

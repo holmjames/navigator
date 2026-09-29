@@ -1,0 +1,9 @@
+{
+  "case": "interested_eu",
+  "text": "Happy to chat. We're looking at options through Q1. The thing I'd want to understand is how you handle about 1,200 travelers across our EU entities, because that's where Concur hurts today.",
+  "expect": {
+    "class": "interested",
+    "questions_count": 1,
+    "draft_required": true
+  }
+}

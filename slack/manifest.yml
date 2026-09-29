@@ -1,0 +1,39 @@
+display_information:
+  name: Navigator
+  description: Your morning board. Research done, drafts checked, next move ready.
+  background_color: "#0F172A"
+features:
+  app_home:
+    home_tab_enabled: true
+    messages_tab_enabled: true
+    messages_tab_read_only_enabled: false
+  bot_user:
+    display_name: Navigator
+    always_online: true
+  slash_commands:
+    - command: /navigator
+      description: pause or resume a tier, a play, or everything; status
+      usage_hint: "pause tier A | resume play new-cfo | status"
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - app_mentions:read
+      - chat:write
+      - chat:write.public
+      - commands
+      - im:history
+      - im:write
+      - users:read
+      - users:read.email
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_home_opened
+      - message.im
+  interactivity:
+    is_enabled: true
+    # request_url and event request_url are set at deploy time to the Bolt app's public URL
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: true

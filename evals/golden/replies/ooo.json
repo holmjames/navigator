@@ -1,0 +1,9 @@
+{
+  "case": "ooo",
+  "text": "I am out of the office until Monday, October 12 with limited access to email.",
+  "expect": {
+    "class": "out_of_office",
+    "date": "2026-10-12",
+    "draft_required": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "claims": [
+    {
+      "id": "claim_001",
+      "text": "Navan combines travel booking and expense management in one platform.",
+      "approved_by": "placeholder"
+    },
+    {
+      "id": "claim_002",
+      "text": "Navan supports multiple legal entities with per-entity billing.",
+      "approved_by": "placeholder"
+    },
+    {
+      "id": "claim_003",
+      "text": "Navan enforces travel policy at the time of booking.",
+      "approved_by": "placeholder"
+    }
+  ],
+  "note": "Placeholder library. Replace with enablement's approved claims before any real send."
+}

@@ -1,0 +1,20 @@
+{
+  "case": "larkspur_clean",
+  "account_id": "acc_larkspur",
+  "contact_id": "c_miguel",
+  "channel": "email",
+  "country": "US",
+  "angle": "first_touch",
+  "expect": {
+    "grade_at_least": "B",
+    "word_count": [
+      60,
+      110
+    ],
+    "quoted_spans_verbatim": true,
+    "receipts_used_subset_of": [
+      "sig_lark_001",
+      "sig_lark_002"
+    ]
+  }
+}

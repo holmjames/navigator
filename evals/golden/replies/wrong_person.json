@@ -1,0 +1,8 @@
+{
+  "case": "wrong_person",
+  "text": "I'm in plant operations; travel isn't mine.",
+  "expect": {
+    "class": "wrong_person",
+    "draft_required": false
+  }
+}

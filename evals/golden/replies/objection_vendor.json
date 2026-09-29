@@ -1,0 +1,8 @@
+{
+  "case": "objection_vendor",
+  "text": "We just signed a three-year renewal with our current vendor, so no.",
+  "expect": {
+    "class": "objection",
+    "draft_required": false
+  }
+}

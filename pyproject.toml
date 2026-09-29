@@ -1,0 +1,18 @@
+[project]
+name = "navigator"
+version = "0.1.0"
+description = "Implementation spec and executable rules for an AI agent team that runs outbound for a 500-rep BDR org."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+build = ["openai>=1.50", "slack_bolt>=1.20", "snowflake-connector-python>=3.10", "pydantic>=2", "pyyaml>=6"]
+
+[tool.pytest.ini_options]
+pythonpath = ["agents/orchestrator", "data"]
+testpaths = ["agents", "evals"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
