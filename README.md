@@ -28,12 +28,13 @@ Status: **spec, not code.** The only executable pieces are the orchestrator's de
 | `integrations/` | One file per vendor: auth, endpoints used, payload shapes, limits, and what still needs verifying. |
 | `evals/` | The golden set and how it runs. |
 
-## The four rules
+## The five rules
 
 1. **Quote it as is or not at all.** Agents personalize only with receipts. For a public company that is a verbatim quote from a call or filing. For a private one it is the artifact itself: a job posting, a press release, a funding announcement. No artifact, no personalization; the touch runs on fit and timing.
 2. **Research once, use many.** Account briefs live in Snowflake with a freshness date. Nothing is re-researched inside 14 days unless a new signal fires.
 3. **Autonomy by tier.** SMB touches send on their own within caps and permitted geographies. Mid-market drafts wait for a rep. Enterprise gets research and warm paths, and a human writes.
 4. **Outcomes retrain the score.** Every reply, meeting, and opp flows back. Weights are refit against what converted, and QA grades are checked against reply rates.
+5. **Enable reps, don't replace them.** Every rep starts the day with a next best action for each account: who to contact, on which channel, and the receipt that makes it worth doing now. Agents handle the research and first drafts. Reps keep the judgment, the relationships, and the conversations.
 
 ## The stack
 

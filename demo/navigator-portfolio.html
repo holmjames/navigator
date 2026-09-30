@@ -94,7 +94,8 @@
 
   .rules { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 0 0 32px; padding: 0; list-style: none; }
   @media (min-width: 720px) { .rules { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 1000px) { .rules { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 720px) and (max-width: 999px) { .rules li:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+  @media (min-width: 1000px) { .rules { grid-template-columns: repeat(5, 1fr); } }
   .rules li { background: var(--surface); border: 1px solid var(--line-2); border-radius: 8px; padding: 14px 16px; }
   .rules b { display: block; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
   .rules p { margin: 0; color: var(--ink-2); font-size: 14px; line-height: 1.45; }
@@ -397,6 +398,7 @@
       <li><b>Research once, use many</b><p>Account briefs live in Snowflake with a freshness date. Nothing gets re-researched inside 14 days unless a new signal fires.</p></li>
       <li><b>Autonomy by tier</b><p>SMB touches send on their own within caps. Mid-market drafts wait for a rep. Enterprise gets research and warm paths, and a human writes.</p></li>
       <li><b>Outcomes retrain the score</b><p>Every reply, meeting, and opp flows back. Weights get recalibrated monthly against what converted, and QA grades get checked against reply rates.</p></li>
+      <li><b>Enable reps, don't replace them</b><p>Every rep starts the day with a next best action for each account: who to contact, on which channel, and the receipt that makes it worth doing now. Agents handle the research and first drafts. Reps keep the judgment, the relationships, and the conversations.</p></li>
     </ul>
 
     <h2>How it's built</h2>
