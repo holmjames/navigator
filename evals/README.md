@@ -1,6 +1,6 @@
 # evals/
 
-The golden set. Runs in CI on every prompt change and every scoring change. Nothing about Navigator's quality is asserted in prose that isn't asserted here.
+The golden set. The scoring and rules tests run in CI on every push and PR; the prompt evals below are specified but not built yet.
 
 ## What's in it
 
@@ -18,14 +18,19 @@ The golden set. Runs in CI on every prompt change and every scoring change. Noth
 
 ## How it runs
 
+What runs today, in CI on every push and PR (49 tests, no API key, no cost):
+
 ```
-uv run pytest evals/            # scoring (SQL against DuckDB with the Snowflake dialect shim), decide(), assemble()
-uv run evals/run_prompts.py     # calls the model on golden/ cases; asserts grade bands and required/forbidden strings; writes a report
+python -m pytest -q             # decide() rules and the Python scoring reference against golden/scores.json
 ```
 
-`run_prompts.py` needs `OPENAI_API_KEY` and costs a few dollars per run; it runs on prompt PRs only. Scoring and rules tests run on every PR and cost nothing.
+Not built yet, specified here for the build:
 
-## Assertions the prompt evals make
+- `evals/run_prompts.py`: calls the model on the `golden/` cases, asserts grade bands and required/forbidden strings, and writes a report. Needs `OPENAI_API_KEY`, costs a few dollars per run, and runs on prompt PRs only.
+- Running `data/scoring.sql` itself against DuckDB with a Snowflake dialect shim, so the SQL (not just the Python reference) is held to `golden/scores.json`.
+- Tests for `assemble()`, the prompt assembly function, once it exists.
+
+## Assertions the prompt evals will make
 
 - Brief: every required fact present with its `[sig_...]` marker; every forbidden fact absent; `no_signal` correct; every quote verbatim.
 - Draft: word count in range; `quoted_spans` are verbatim substrings of receipts; `receipts_used` ⊆ allowed; no banned phrase; no `@` or digit runs of 7+.
