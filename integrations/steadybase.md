@@ -10,7 +10,7 @@ Receipted signals, identity resolution, people (identity only), earnings calenda
 | REST | `https://api.steadybase.io` (`/v1/accounts`, `/v1/whats_new`, `/v1/upcoming`, `/v1/search`, `/v1/accounts/bulk`, `POST /v1/accounts/resolve`) | same |
 | Snowflake | Tenant views `GTM_SIGNALS.TERRITORY.V_TENANT_WHY_NOW`, `V_TENANT_ACCOUNT_SIGNALS`, `V_TENANT_PEOPLE`, `V_TENANT_FUTURE_EVENTS`, `V_TENANT_TRIGGERS`, `V_TENANT_TRIGGER_HITS`, read as role `GTM_SIGNALS_RO_<TENANT>` | Snowflake role |
 
-Keys are issued by hand (`andrew@steadybase.io`). A key reads the shared corpus on day one; book answers need the tenant onboarded (`tools/onboard_tenant.py` on their side) and a board published. Entitlement `navan_read`: contact data is off; people come back as name, title, persona, LinkedIn URL only.
+Keys are issued by hand by the vendor. A key reads the shared corpus on day one; book answers need the tenant onboarded (`tools/onboard_tenant.py` on their side) and a board published. Entitlement `meridian_read`: contact data is off; people come back as name, title, persona, LinkedIn URL only.
 
 ## Tools Navigator uses
 
@@ -44,14 +44,14 @@ HTTP API enrichment, `POST https://mcp.steadybase.io/mcp`, body `{"jsonrpc":"2.0
 ## Coverage and risk
 
 - Shaped around SEC filers. Expect it to cover a minority of a 500-rep book. Clay carries the private lane.
-- The docs read like a very small company (keys by hand, draft pricing, "Needs Andrew" notes). Mitigations in `docs/decisions.md` #6 and #7: Navan owns the id map in its own Snowflake, the ladder is reproducible, receipts are stored as URLs plus the verbatim quote, and nothing downstream depends on the MCP being up.
+- The docs read like a very small company (keys by hand, draft pricing, notes that route to one named person). Mitigations in `docs/decisions.md` #6 and #7: Meridian Travel owns the id map in its own Snowflake, the ladder is reproducible, receipts are stored as URLs plus the verbatim quote, and nothing downstream depends on the MCP being up.
 
 ## Pricing (draft on their page, 2026-09-28)
 
-Public: free, no key. Build: $99/month, one tenant key, all 48 MCP tools, flat rate. Operate: custom, adds ICP, personas, private books, account-scoped triggers. Navan's tier is Operate.
+Public: free, no key. Build: $99/month, one tenant key, all 48 MCP tools, flat rate. Operate: custom, adds ICP, personas, private books, account-scoped triggers. Meridian Travel's tier is Operate.
 
 ## To verify
 
-- [ ] Whether Navan already has a tenant, a key, and a published board (`GET /v1/accounts?limit=1` answers 200 with rows).
-- [ ] Whether the tenant views are shared into Navan's Snowflake account, and which role reads them.
+- [ ] Whether Meridian Travel already has a tenant, a key, and a published board (`GET /v1/accounts?limit=1` answers 200 with rows).
+- [ ] Whether the tenant views are shared into Meridian Travel's Snowflake account, and which role reads them.
 - [ ] Slack delivery channel for triggers.

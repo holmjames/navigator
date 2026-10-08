@@ -1,6 +1,6 @@
 # n8n
 
-The flow tool for event-driven and scheduled glue. Self-hosted in Navan's cloud or on n8n's cloud plan. Chosen over Zapier because per-task pricing at Navigator's volume exceeds the model bill and Zapier cannot host the Slack endpoint (`docs/decisions.md` #5).
+The flow tool for event-driven and scheduled glue. Self-hosted in Meridian Travel's cloud or on n8n's cloud plan. Chosen over Zapier because per-task pricing at Navigator's volume exceeds the model bill and Zapier cannot host the Slack endpoint (`docs/decisions.md` #5).
 
 ## Workflows
 
@@ -28,5 +28,5 @@ n8n needs a running process either way. On n8n cloud there is nothing to operate
 
 ## To verify
 
-- [ ] Whether Navan already runs n8n, Workato, Tray, or similar; use what exists.
+- [ ] Whether Meridian Travel already runs n8n, Workato, Tray, or similar; use what exists.
 - [ ] Network path from n8n to Snowflake (private link or IP allowlist).

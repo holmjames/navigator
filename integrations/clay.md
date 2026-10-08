@@ -35,7 +35,7 @@ A nightly export of `core.account` (non-suppressed, non-holdout, with `fit`) is 
 | Growth | $495 ($446 annual) | 6,000 | 40,000 |
 | Enterprise | custom | 100,000+ | 200,000+ |
 
-Data credits start at $0.05 each; per-provider costs show in-app only. Actions start under $0.01. At Navigator's volume (about 135,000 credits a month at 500 reps on the demo's defaults) Navan is on Enterprise; the per-credit rate should be at or below the floor.
+Data credits start at $0.05 each; per-provider costs show in-app only. Actions start under $0.01. At Navigator's volume (about 135,000 credits a month at 500 reps on the demo's defaults) Meridian Travel is on Enterprise; the per-credit rate should be at or below the floor.
 
 ## Budgets
 
@@ -43,6 +43,6 @@ Per play, in each play file, with an `ops` counter and an alert at 80%.
 
 ## To verify
 
-- [ ] Navan's current Clay plan and per-credit rate.
+- [ ] Meridian Travel's current Clay plan and per-credit rate.
 - [ ] Whether the Snowflake destination is enabled on the plan.
 - [ ] Credit cost per row for each provider used, in-app.

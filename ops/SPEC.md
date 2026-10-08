@@ -6,7 +6,7 @@ Production changes to any of these go through the Navigator operator: `operator.
 
 ## Secrets
 
-- Every vendor key lives in the secret store Navan already uses (AWS Secrets Manager or equivalent), read into environment variables at process start. Never in a file, a Clay cell, an n8n node's parameters (use n8n credentials), a fixture, a test, or a log line.
+- Every vendor key lives in the secret store Meridian Travel already uses (AWS Secrets Manager or equivalent), read into environment variables at process start. Never in a file, a Clay cell, an n8n node's parameters (use n8n credentials), a fixture, a test, or a log line.
 - Clay's HTTP enrichment columns reference keys from Clay's own secret store, not the cell.
 - The SteadyBase key is rotated on any suspected exposure (their rotate-first, revoke-later policy gives seven days).
 - A test greps the repo, the exported Clay tables, and the n8n workflow JSON for `gtms_`, `ms_`, `sk-`, and `Bearer ` followed by a token shape, and fails CI on a hit.

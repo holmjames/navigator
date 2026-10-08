@@ -1,6 +1,6 @@
 # Play 5: stack detection
 
-**Fires when** tech detection finds a displacement target (Concur, Expensify, TravelPerk, Egencia, Emburse, Zoho Expense, Ramp Travel, another managed-travel platform) or a corporate card program (Amex, Brex, Ramp, Divvy).
+**Fires when** tech detection finds a displacement target (Concur, Spendwell, TravelPerk, Egencia, Emburse, Zoho Expense, Kestrel Travel, another managed-travel platform) or a corporate card program (Amex, Harbor Card, Kestrel, Divvy).
 
 This play does not write a `core.signals` row on its own. It sets `core.account.stack_detected` (`displacement`, `card_only`, `none`), which feeds the fit term (10, 5, or 3 points), and it adds a line to the brief. Combined with any other play on the same account, it changes the draft's angle (displacement versus first-time managed travel).
 

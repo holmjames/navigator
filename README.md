@@ -46,4 +46,4 @@ The human-facing walkthrough (architecture, a rep's morning, data flow, build pl
 
 ## License and data
 
-Larkspur Dynamics and every person named in examples are fictional. Vendor descriptions are from public documentation as of September 2026 and may have changed; each `integrations/*.md` carries its own date.
+Larkspur Dynamics, every person named in examples, the client ("Meridian Travel"), and the competitors it is positioned against (Spendwell, Kestrel, Harbor Card) are fictional. Vendor descriptions are from public documentation as of September 2026 and may have changed; each `integrations/*.md` carries its own date.

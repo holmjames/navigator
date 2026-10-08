@@ -20,4 +20,4 @@ steadybase:
 centralize:
   per_seat_per_month: 49       # Pro list; Enterprise (Salesforce integration) is custom
 snowflake:
-  per_credit: 3.00             # Enterprise edition, US regions; confirm Navan's contract rate
+  per_credit: 3.00             # Enterprise edition, US regions; confirm Meridian Travel's contract rate

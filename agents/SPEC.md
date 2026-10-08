@@ -32,7 +32,7 @@ Runs after the hourly build at 01:00 in each rep's local timezone bucket (US Pac
 6. Write one `core.cost_events` row per model call.
 7. Post the board to `slack/` (App Home) and DMs for P1s.
 
-Batch mechanics: Cortex `COMPLETE` inside SQL where Navan's Snowflake region hosts OpenAI models; otherwise the runner writes a JSONL to stage, files an OpenAI Batch job, and a second task collects it. Both paths produce identical rows. See `integrations/openai.md`.
+Batch mechanics: Cortex `COMPLETE` inside SQL where Meridian Travel's Snowflake region hosts OpenAI models; otherwise the runner writes a JSONL to stage, files an OpenAI Batch job, and a second task collects it. Both paths produce identical rows. See `integrations/openai.md`.
 
 ## Prompt assembly (the only PII gate)
 

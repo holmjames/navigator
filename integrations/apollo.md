@@ -1,6 +1,6 @@
 # Apollo
 
-Two roles: the email sequencing engine (sends, caps, unsubscribes, replies, bounces) and the contact fallback behind MoltSets in the waterfall. Already on Navan's stack; pricing not modeled.
+Two roles: the email sequencing engine (sends, caps, unsubscribes, replies, bounces) and the contact fallback behind MoltSets in the waterfall. Already on Meridian Travel's stack; pricing not modeled.
 
 ## Sequencing
 
@@ -21,6 +21,6 @@ Second in the waterfall: called from the Clay column when MoltSets returns `not_
 
 ## To verify
 
-- [ ] Reply webhook availability on Navan's Apollo plan and its payload (message id, thread, reply text).
+- [ ] Reply webhook availability on Meridian Travel's Apollo plan and its payload (message id, thread, reply text).
 - [ ] Whether per-sequence first-step delays can be set by API.
 - [ ] Deliverability setup: sending domains, warmup, and whether Tier A volume needs additional mailboxes.

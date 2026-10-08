@@ -334,7 +334,7 @@ create table if not exists core.outcomes (
 create table if not exists core.warm_paths (
   account_id     string not null,
   contact_id     string,
-  connector_id   string,           -- Navan employee, customer, investor, or advisor
+  connector_id   string,           -- Meridian Travel employee, customer, investor, or advisor
   connector_name string,
   overlap        string,
   strength       float,

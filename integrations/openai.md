@@ -1,6 +1,6 @@
 # OpenAI
 
-Models for the agent team. Navan's preference; prompts are portable (`docs/decisions.md` #1).
+Models for the agent team. Meridian Travel's preference; prompts are portable (`docs/decisions.md` #1).
 
 ## Models and jobs
 
@@ -41,5 +41,5 @@ About $2,900 a month with batch and caching; 13% of the run bill. Rows and seats
 
 ## To verify
 
-- [ ] Navan's OpenAI organization, data-retention settings (zero data retention for API calls if required by security), and whether the enterprise agreement covers the Batch API.
+- [ ] Meridian Travel's OpenAI organization, data-retention settings (zero data retention for API calls if required by security), and whether the enterprise agreement covers the Batch API.
 - [ ] Rate limits for the nightly window (105,000 drafts a month is about 5,000 a night).

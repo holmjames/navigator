@@ -16,7 +16,7 @@ Slack's interaction endpoint must acknowledge within 3 seconds; the Edit action 
 
 ## Hosting
 
-The Bolt app runs as one small service (a container in Navan's cloud, or Slack's Socket Mode from a worker if a public endpoint is not wanted). Socket Mode avoids exposing a URL but still needs a running process; the manifest is written for HTTP and flips to Socket Mode with two lines.
+The Bolt app runs as one small service (a container in Meridian Travel's cloud, or Slack's Socket Mode from a worker if a public endpoint is not wanted). Socket Mode avoids exposing a URL but still needs a running process; the manifest is written for HTTP and flips to Socket Mode with two lines.
 
 ## Rate limits
 
@@ -24,5 +24,5 @@ Posting 500 P1 DMs at 07:00 local per timezone bucket stays under `chat.postMess
 
 ## To verify
 
-- [ ] Navan is on Slack (not Teams) and an internal app can be installed by the workspace admin.
+- [ ] Meridian Travel is on Slack (not Teams) and an internal app can be installed by the workspace admin.
 - [ ] Whether SteadyBase's trigger Slack delivery and Centralize's Slack app should post into the same pod channels, or Navigator should be the only voice.

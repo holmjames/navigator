@@ -14,7 +14,7 @@ Each play has one file here with: what fires it, the sources for public and priv
 | 2 | [T&E consolidation](play-02-te-consolidation.md) | A company says it is consolidating, switching, or reviewing travel and expense tools | SteadyBase trigger "a company on my book says it is consolidating its expense or travel tools onto one vendor" | Claygent search of newsroom, press releases, and public posts for the same phrases | 30 |
 | 3 | [Travel and finance hiring](play-03-hiring.md) | A travel manager, T&E lead, or three or more finance/AP roles posted | SteadyBase `web_hiring_posting` lane | Clay job postings provider, filtered by title | 20 / 14 |
 | 4 | [Expansion](play-04-expansion.md) | New office, new country, headcount plan, or a funding round | SteadyBase `expansion` lane, transcripts | Clay news and funding providers, Claygent on the careers page for new locations | 18 / 16 |
-| 5 | [Stack detection](play-05-stack.md) | Concur, Expensify, TravelPerk, Egencia, Emburse, or a card program detected | Clay tech-detection providers for both | Same | feeds `fit`, not `signal`; combined with any other play it raises the account's timing note |
+| 5 | [Stack detection](play-05-stack.md) | Concur, Spendwell, TravelPerk, Egencia, Emburse, or a card program detected | Clay tech-detection providers for both | Same | feeds `fit`, not `signal`; combined with any other play it raises the account's timing note |
 
 ## Budgets
 

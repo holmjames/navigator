@@ -389,7 +389,7 @@
     <div class="hero">
       <h1>Navigator</h1>
       <p class="lede">A team of agents that does the market, account, and prospect research, drafts and checks every touch, handles replies, and tells each rep what to do next.</p>
-      <p class="sub">Designed for 500 BDRs, built to run at 1,000. A concept for Navan GTM Ops, prepared by James Holm, September 2026.</p>
+      <p class="sub">Designed for 500 BDRs, built to run at 1,000. A concept for Meridian Travel GTM Ops, prepared by James Holm, September 2026.</p>
     </div>
 
     <ul class="rules">
@@ -681,7 +681,7 @@
           <li><b>Briefs expire.</b> Older than 14 days, or older than the newest signal on the account, and the brief is rebuilt before a rep sees it.</li>
           <li><b>Every touch carries its draft id and QA grade.</b> A reply can always be traced to the exact words that earned it, which is what makes the monthly grade check possible.</li>
           <li><b>Geography gates autonomy.</b> Every contact carries a country. Tier A applies only in permitted geographies, EU contacts are always human-approved, and mobiles are scrubbed against do-not-call lists before any call list is built.</li>
-          <li><b>Retention follows Navan's CRM policy.</b> Vendor DPAs cover SteadyBase, MoltSets, TheSwarm, and Centralize; transcripts from Nooks keep the same retention as Gong or the call recorder already in place.</li>
+          <li><b>Retention follows Meridian Travel's CRM policy.</b> Vendor DPAs cover SteadyBase, MoltSets, TheSwarm, and Centralize; transcripts from Nooks keep the same retention as Gong or the call recorder already in place.</li>
         </ul>
       </div>
     </div>
@@ -757,11 +757,11 @@
           <tr><th>Evals and the cost meter</th><td data-label="Home"><b>Code.</b> A golden set in the repo, run in CI</td><td data-label="Why">Prompt regressions are caught before a send, not after</td></tr>
         </tbody>
       </table>
-      <p class="after">Zapier fits a ten-rep pilot's glue and nothing past it: per-task pricing at 100,000 touches a month costs more than the model, and it cannot host the Slack endpoint. n8n, self-hosted in Navan's cloud or on n8n's cloud plan, is the flow tool that scales; it still needs someone watching it, which is why the batch work sits in Snowflake wherever it can.</p>
+      <p class="after">Zapier fits a ten-rep pilot's glue and nothing past it: per-task pricing at 100,000 touches a month costs more than the model, and it cannot host the Slack endpoint. n8n, self-hosted in Meridian Travel's cloud or on n8n's cloud plan, is the flow tool that scales; it still needs someone watching it, which is why the batch work sits in Snowflake wherever it can.</p>
     </div>
     <div class="panel" style="margin-top:20px">
       <h3>If procurement is slower than three weeks</h3>
-      <p class="p-note">Week one runs on tools Navan has already approved. Each new vendor joins the waterfall when it clears security, and nothing downstream changes shape.</p>
+      <p class="p-note">Week one runs on tools Meridian Travel has already approved. Each new vendor joins the waterfall when it clears security, and nothing downstream changes shape.</p>
       <table class="tiers lite">
         <colgroup><col class="c-tier"><col><col></colgroup>
         <thead><tr><th>Layer</th><th>Runs on day one</th><th>Joins when cleared</th></tr></thead>
@@ -828,7 +828,7 @@
         <dl class="dl">
           <dt>AI writing to CFOs embarrasses the brand</dt><dd>Receipted claims only, a QA gate before any send, autonomy by tier, send caps, and a kill switch per tier and per play.</dd>
           <dt>Deliverability at 500-rep volume</dt><dd>Caps enforced in Apollo, domain warmup, grade A and B emails only, bounces feed suppression the same hour.</dd>
-          <dt>A vendor is in beta, issues keys by hand, or is a very small company</dt><dd>MoltSets and SteadyBase both are. Apollo is the fallback on every contact row. For SteadyBase specifically: Navan owns the account_id map in its own Snowflake, the resolver ladder is documented and reproducible, receipts are stored as URLs so signals outlive the vendor, and nothing downstream depends on the MCP being up.</dd>
+          <dt>A vendor is in beta, issues keys by hand, or is a very small company</dt><dd>MoltSets and SteadyBase both are. Apollo is the fallback on every contact row. For SteadyBase specifically: Meridian Travel owns the account_id map in its own Snowflake, the resolver ladder is documented and reproducible, receipts are stored as URLs so signals outlive the vendor, and nothing downstream depends on the MCP being up.</dd>
           <dt>Cold outreach rules differ by country</dt><dd>Contacts carry a country, and it gates autonomy. Tier A auto-send only in permitted geographies, US and Canada to start. EU contacts are always human-approved under a documented legitimate-interest basis. Business email only, never a personal-email endpoint. Mobiles are scrubbed against do-not-call lists before any Nooks list, and there is no SMS.</dd>
           <dt>Reps don't use it</dt><dd>One tap in Slack, nothing to learn, and the manager view shows who actions signals within 24 hours.</dd>
           <dt>Duplicates and wrong accounts at 1,000 reps</dt><dd>The resolver with a review queue, never a merge on name or domain, and territories keyed to account_id.</dd>
@@ -856,7 +856,7 @@
   <section class="view" id="view-scale" role="tabpanel">
     <div class="hero">
       <h2 style="font-size:36px">Scale and pilot</h2>
-      <p class="h2-note" style="font-size:17px">Every number here is an input. These defaults are illustrative; swap in Navan's own and the math updates.</p>
+      <p class="h2-note" style="font-size:17px">Every number here is an input. These defaults are illustrative; swap in Meridian Travel's own and the math updates.</p>
     </div>
 
     <div class="scale">
@@ -1026,13 +1026,13 @@
   var NODES = {
     steadybase: { name: 'SteadyBase', band: 'Signals and data', links: ['resolver', 'snowflake', 'account', 'scoring', 'messaging', 'market', 'prospect'],
       job: 'Receipted signals for the public-company half of the book. Every signal is a verbatim quote from an earnings call, filing, investor deck, or job posting, with a link to where it was said.',
-      takes: 'Navan’s book (tickers and domains), triggers written in plain language (“tell me when a CFO on my book mentions travel spend”), and the persona ladder: CFO, controller, FP&A, treasury, AP, procurement, travel manager.',
+      takes: 'Meridian Travel’s book (tickers and domains), triggers written in plain language (“tell me when a CFO on my book mentions travel spend”), and the persona ladder: CFO, controller, FP&A, treasury, AP, procurement, travel manager.',
       sends: 'Trigger hits with quotes and receipts, a ranked why-now list, P1 to P4 priorities, the next earnings call for every account, finance leaders new in role, M&A read from filings. Delivered to Snowflake views, Slack, and webhooks.',
-      why: 'Its public docs are written around a Navan travel book, so it is likely already in the building. Receipts are what make automated outreach safe at 100,000 CFOs. Expect it to cover a minority of a 500-rep book, since it is shaped around SEC filers; Clay carries the rest. It never returns an email or phone by design, which is what MoltSets and Apollo are for.',
+      why: 'Its public docs are written around a Meridian Travel travel book, so it is likely already in the building. Receipts are what make automated outreach safe at 100,000 CFOs. Expect it to cover a minority of a 500-rep book, since it is shaped around SEC filers; Clay carries the rest. It never returns an email or phone by design, which is what MoltSets and Apollo are for.',
       swap: 'Clay’s Claygent plus an earnings-transcript API can approximate the signals, without the receipts or the identity layer.' },
     clay: { name: 'Clay', band: 'Signals and data', links: ['snowflake', 'moltsets', 'apollo-data', 'swarm', 'account', 'steadybase'],
       job: 'The private and mid-market lane, and the enrichment waterfall for every account. Most of the book is probably here.',
-      takes: 'Account lists from Snowflake; job postings, funding rounds, office openings, and tech detection (Concur, Expensify, Brex, Ramp, TravelPerk); Claygent web research; SteadyBase, MoltSets, and TheSwarm over HTTP.',
+      takes: 'Account lists from Snowflake; job postings, funding rounds, office openings, and tech detection (Concur, Spendwell, Harbor Card, Kestrel, TravelPerk); Claygent web research; SteadyBase, MoltSets, and TheSwarm over HTTP.',
       sends: 'Enriched rows back to Snowflake and Salesforce, and a webhook to the agents when a new signal fires.',
       why: 'The fastest way to stand up five signal plays without engineering time. Three weeks is enough for that. Per-row pricing is the thing to manage: research once, cache in Snowflake, refresh on a signal or every 14 days.',
       swap: 'The same plays in code against the provider APIs directly, slower to build and cheaper to run at 1,000 reps.' },
@@ -1049,13 +1049,13 @@
       why: 'Already on the table, and doing the sequencing anyway.',
       swap: 'ZoomInfo or Cognism in the same slot.' },
     swarm: { name: 'TheSwarm', band: 'Signals and data', links: ['clay', 'snowflake', 'scoring', 'nba', 'centralize'],
-      job: 'Warm paths at list scale, before anyone has been contacted. Who at Navan, or among its customers, investors, and advisors, knows someone on the buying committee.',
-      takes: 'Account domains from the book; work and education overlaps for Navan’s people mapped passively, LinkedIn and email connections with opt-in.',
+      job: 'Warm paths at list scale, before anyone has been contacted. Who at Meridian Travel, or among its customers, investors, and advisors, knows someone on the buying committee.',
+      takes: 'Account domains from the book; work and education overlaps for Meridian Travel’s people mapped passively, LinkedIn and email connections with opt-in.',
       sends: 'Intro paths with a connection-strength score and job-change alerts, into Clay tables and Snowflake through its API.',
       why: 'It runs on the whole book in bulk, which Centralize does not. The relationship term in the score comes from here, and a warm path beats a cold email in the orchestrator every time.',
       swap: 'Centralize can find team-network intros deal by deal; without either, the relationship term is zero and everything goes cold.' },
     'sfdc-data': { name: 'Salesforce (data)', band: 'Signals and data', links: ['resolver', 'snowflake', 'scoring', 'nba'],
-      job: 'What Navan already knows: ownership, past opps and why they were lost, open deals, customers, do-not-contact.',
+      job: 'What Meridian Travel already knows: ownership, past opps and why they were lost, open deals, customers, do-not-contact.',
       takes: 'Nothing new. It is the source.',
       sends: 'Account and contact state into Snowflake nightly; the 18-character ids that the resolver maps to one account_id.',
       why: 'Every signal has to land on the record the rep already owns, or it is noise.',
@@ -1064,13 +1064,13 @@
       job: 'One stable account_id per company that survives ticker changes, renames, exchange moves, and acquisitions. Territories, dedupe, and ownership key off it.',
       takes: 'Any identifiers a record has: LEI, CIK, ticker, domain, LinkedIn slug, legal name with jurisdiction, a Salesforce id. Evaluated as a ladder, strongest first.',
       sends: 'One id with a confidence and the evidence that produced it, or an explicit no-match with candidates. Two candidates is ambiguity, never a match.',
-      why: 'At 1,000 reps the failure mode is two reps working the same company under two names, or a subsidiary record carrying the parent’s website. SteadyBase ships this resolver and the Salesforce id map for the public book. Private accounts have no LEI or CIK, so the same ladder runs on domain, LinkedIn slug, and legal name in Navan’s own Snowflake, with the same review queue. Navan owns the id map either way.',
+      why: 'At 1,000 reps the failure mode is two reps working the same company under two names, or a subsidiary record carrying the parent’s website. SteadyBase ships this resolver and the Salesforce id map for the public book. Private accounts have no LEI or CIK, so the same ladder runs on domain, LinkedIn slug, and legal name in Meridian Travel’s own Snowflake, with the same review queue. Meridian Travel owns the id map either way.',
       swap: 'A dedupe rule set in Snowflake on domain and name, which is what most teams have and why they have duplicates.' },
     snowflake: { name: 'Snowflake', band: 'Identity and memory', links: ['steadybase', 'clay', 'moltsets', 'swarm', 'sfdc-data', 'resolver', 'scoring', 'account', 'market', 'nba', 'manager', 'apollo', 'nooks'],
       job: 'The memory. Account universe, every signal that ever fired, the brief cache with freshness dates, every touch, every outcome. Deterministic scoring runs here as SQL.',
       takes: 'SteadyBase tenant views (why-now, account signals, people, trigger hits already land here), Clay results, MoltSets and TheSwarm output, Apollo and Nooks activity, Salesforce nightly.',
       sends: 'The daily playbook per rep, scores with reason codes, manager metrics, and the training set for monthly recalibration.',
-      why: 'Navan almost certainly has it, SteadyBase’s data is Snowflake-native, and Cortex can write reason codes without moving data out. Clay charges per row you touch; Snowflake is where you keep what you already paid for.',
+      why: 'Meridian Travel almost certainly has it, SteadyBase’s data is Snowflake-native, and Cortex can write reason codes without moving data out. Clay charges per row you touch; Snowflake is where you keep what you already paid for.',
       swap: 'BigQuery or Databricks in the same role. The point is that it exists and Clay is not it.' },
     market: { name: 'Market research agent', band: 'The agent team', links: ['steadybase', 'snowflake', 'slack', 'manager'],
       job: 'Once a week, per segment and territory: what moved, who reports this week, which plays are converting.',
@@ -1095,9 +1095,9 @@
       takes: 'Firmographics, receipted signal strength and evidence tier, days since the last earnings call and until the next, leaders new in role, warm-path strength, CRM history.',
       sends: 'A score, a P1 to P4 tier, three reason lines in plain words, and the tier that decides how much autonomy the agents get on this account.',
       why: 'A formula can be audited, explained to a rep, and recalibrated against outcomes. A model guessing a number cannot.',
-      swap: 'SteadyBase’s own rank score for public accounts, until Navan’s outcome data is big enough to fit weights.' },
+      swap: 'SteadyBase’s own rank score for public accounts, until Meridian Travel’s outcome data is big enough to fit weights.' },
     messaging: { name: 'Messaging agent', band: 'The agent team', links: ['account', 'prospect', 'qa', 'apollo', 'nooks', 'slack'],
-      job: 'Drafts the email, the call opener, and the LinkedIn note, in Navan’s voice, for the persona in front of it.',
+      job: 'Drafts the email, the call opener, and the LinkedIn note, in Meridian Travel’s voice, for the persona in front of it.',
       takes: 'The brief, the contact row, the play’s template, and the voice guide.',
       sends: 'Drafts to QA, never directly to a rep or a sequence.',
       why: 'One rule makes it safe: it may only personalize with receipted signals. “Quote it as is or not at all” is SteadyBase’s phrase, and it is the answer to “how do we let AI write to CFOs.”',
@@ -1217,7 +1217,7 @@
         '<div class="person"><div><b>Dana Whitcombe</b> <span class="role">CFO</span></div><div><span class="chip ok">email A</span></div></div>' +
         '<div class="person"><div><b>Miguel Serrano</b> <span class="role">Controller, 58 days in role</span></div><div><span class="chip ok">email A</span> <span class="chip ok">mobile</span> <span class="chip warm">warm path</span></div></div>' +
         '<div class="person"><div><b>Anika Rao</b> <span class="role">VP FP&amp;A</span></div><div><span class="chip ok">email B</span></div></div>' +
-        '</div><p class="note">Jenna Okafor on Enterprise West worked with Miguel at Brightline Software from 2019 to 2021. Connection strength 0.82. None of the three has been contacted by Navan before.</p></div>',
+        '</div><p class="note">Jenna Okafor on Enterprise West worked with Miguel at Brightline Software from 2019 to 2021. Connection strength 0.82. None of the three has been contacted by Meridian Travel before.</p></div>',
       hood: [
         ['SteadyBase', 'People for LKSP by persona: cfo, controller, fpa. Identity and LinkedIn only, no email or phone, by design.'],
         ['MoltSets', 'Business emails verified with risk grades and validation dates; carrier-verified mobile for the controller. Suppression list applied: customers, open opps, competitors.'],
@@ -1240,7 +1240,7 @@
       html: '<p>Here’s the touch I’d start with, and the plan around it.</p>' +
         '<div class="email"><div class="subj">The single-platform move Dana mentioned Thursday</div>' +
         '<p>Miguel, congrats on the new role. On Thursday’s call Dana said Larkspur is consolidating travel and expense onto one platform in the first half as part of the efficiency program.</p>' +
-        '<p>That is the exact project Navan runs for companies your size, and the part that usually surprises a new controller is how much of the $40M-type target shows up in policy compliance rather than negotiated rates. Happy to show you what that looked like for two logistics companies with a similar 14-office footprint.</p>' +
+        '<p>That is the exact project Meridian Travel runs for companies your size, and the part that usually surprises a new controller is how much of the $40M-type target shows up in policy compliance rather than negotiated rates. Happy to show you what that looked like for two logistics companies with a similar 14-office footprint.</p>' +
         '<p>Would 20 minutes next week be useful, or is there someone on your team already running the evaluation?</p></div>' +
         '<div class="qa"><div class="grade mono">A-</div><div><b>QA</b><ul><li>Every claim traces to a receipt or CRM data. The $40M figure is the CFO’s.</li><li>91 words, one ask, no links: deliverability clean.</li><li>Cut “the part that usually surprises” if you want it shorter; it’s the only line that leans on tone.</li></ul></div></div>' +
         '<div class="card"><h4>Next best action</h4><div class="nba">' +

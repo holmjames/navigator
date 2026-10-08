@@ -25,7 +25,7 @@ One X-Small warehouse `NAVIGATOR_WH` with auto-suspend at 60 seconds for the hou
 
 ## Cortex
 
-Snowflake Cortex AI hosts OpenAI models on Azure-region accounts (announced 2025). If Navan's account is on Azure, briefs, drafts, QA, and reason codes run as `SNOWFLAKE.CORTEX.COMPLETE('<model>', <prompt>)` inside the nightly task, batched by SQL. If the account is on AWS, the same jobs run through the OpenAI Batch API filed from n8n (`ingest/n8n/openai-batch.json`). `docs/decisions.md` open item C.
+Snowflake Cortex AI hosts OpenAI models on Azure-region accounts (announced 2025). If Meridian Travel's account is on Azure, briefs, drafts, QA, and reason codes run as `SNOWFLAKE.CORTEX.COMPLETE('<model>', <prompt>)` inside the nightly task, batched by SQL. If the account is on AWS, the same jobs run through the OpenAI Batch API filed from n8n (`ingest/n8n/openai-batch.json`). `docs/decisions.md` open item C.
 
 ## Cost controls
 
@@ -33,7 +33,7 @@ Resource monitor on `NAVIGATOR_WH` at 150 credits a month with notify at 80% and
 
 ## To verify
 
-- [ ] Navan's cloud and region (Cortex model availability).
+- [ ] Meridian Travel's cloud and region (Cortex model availability).
 - [ ] Edition (Standard vs Enterprise) for the credit rate.
 - [ ] Whether the Salesforce connector is the native one or Fivetran.
 - [ ] Whether SteadyBase's tenant views are already shared into the account.

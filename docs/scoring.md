@@ -43,10 +43,10 @@ Deterministic from firmographics. Four components.
 
 | Detected | Points |
 |---|---|
-| A displacement target: Concur, Expensify, TravelPerk, Egencia, Emburse, Zoho Expense, Ramp Travel, or another managed-travel platform | 10 |
-| A corporate card program only (Amex, Brex, Ramp card, Divvy) | 5 |
+| A displacement target: Concur, Spendwell, TravelPerk, Egencia, Emburse, Zoho Expense, Kestrel Travel, or another managed-travel platform | 10 |
+| A corporate card program only (Amex, Harbor Card, Kestrel card, Divvy) | 5 |
 | Nothing detected | 3 |
-| Navan (customer) | excluded by suppression before scoring |
+| Meridian Travel (customer) | excluded by suppression before scoring |
 
 **Growth (0 to 6)** from 24-month headcount change:
 

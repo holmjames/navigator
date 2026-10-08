@@ -2,17 +2,17 @@
   "claims": [
     {
       "id": "claim_001",
-      "text": "Navan combines travel booking and expense management in one platform.",
+      "text": "Meridian Travel combines travel booking and expense management in one platform.",
       "approved_by": "placeholder"
     },
     {
       "id": "claim_002",
-      "text": "Navan supports multiple legal entities with per-entity billing.",
+      "text": "Meridian Travel supports multiple legal entities with per-entity billing.",
       "approved_by": "placeholder"
     },
     {
       "id": "claim_003",
-      "text": "Navan enforces travel policy at the time of booking.",
+      "text": "Meridian Travel enforces travel policy at the time of booking.",
       "approved_by": "placeholder"
     }
   ],

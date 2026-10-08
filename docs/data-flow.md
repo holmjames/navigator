@@ -24,7 +24,7 @@ Three things the design argues for: every row is resolved to one `account_id` be
 5. **Briefs expire.** `fresh_until` is the earlier of 14 days after `written_at` and the newest signal's `first_seen`. A stale brief is rebuilt before a rep sees it.
 6. **Every touch carries its `draft_id` and `qa_grade`.** A reply can always be traced to the exact words that earned it.
 7. **Geography gates autonomy.** Every contact carries a country. Tier A applies only in `AUTO_GEOS`; EU contacts are always human-approved; mobiles are scrubbed against do-not-call lists before any call list is built.
-8. **Retention follows Navan's CRM policy.** Vendor DPAs cover SteadyBase, MoltSets, TheSwarm, and Centralize. Nooks transcripts keep the same retention as the call recorder already in place.
+8. **Retention follows Meridian Travel's CRM policy.** Vendor DPAs cover SteadyBase, MoltSets, TheSwarm, and Centralize. Nooks transcripts keep the same retention as the call recorder already in place.
 
 ## Idempotency
 

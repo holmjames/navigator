@@ -1,11 +1,11 @@
 # TheSwarm
 
-Relationship data: warm intro paths across Navan employees, customers, investors, advisors, and their networks, at list scale. Verified against `https://www.theswarm.com/` and `/pricing` on 2026-09-28.
+Relationship data: warm intro paths across Meridian Travel employees, customers, investors, advisors, and their networks, at list scale. Verified against `https://www.theswarm.com/` and `/pricing` on 2026-09-28.
 
 ## What it provides
 
 - Intro paths from a company domain or a person to anyone in the combined network, with a normalized `connection_strength` and the overlap type (`work`, `school`, `investor`, LinkedIn or email connection with opt-in).
-- Passive mapping: work and education overlaps for Navan's people from their work history, before anyone opts in. LinkedIn and email connections require each employee to install the extension and opt in; coverage grows with that program.
+- Passive mapping: work and education overlaps for Meridian Travel's people from their work history, before anyone opts in. LinkedIn and email connections require each employee to install the extension and opt in; coverage grows with that program.
 - Data: 500M profiles, daily job changes, 50M companies with fundraising data.
 - Surfaces: SaaS app, Chrome extension, Clay integration, Data API, HubSpot and CRM integrations, MCP ("Available on Claude").
 
